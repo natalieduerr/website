@@ -1,0 +1,60 @@
+$big-type: 3.5rem;
+$middle-type: 2.5rem;
+$small-type: 1.5rem;
+$body-type: 1rem;
+
+
+h1,
+h2 {
+  color: $pink;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: $middle-type;
+
+  @media (min-width: $min-md) {
+    font-size: $big-type;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @media (min-width: $min-sm) {
+    font-size: $middle-type;
+  }
+
+  @media (min-width: $min-md) {
+    font-size: $big-type;
+  }
+}
+
+h6 {
+  font-family: "Space Mono", monospace;
+  color: $blue;
+  margin: 0;
+  font-weight: 400;
+  font-size: $body-type;
+
+  @media (min-width: $min-md) {
+    font-size: $small-type;
+  }
+}
+
+a {
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+
+  &:not(.name) {
+    color: $green;
+    font-style: italic;
+  }
+
+  &:hover {
+    // need to do this
+  }
+}
+

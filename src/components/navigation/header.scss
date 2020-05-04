@@ -1,0 +1,41 @@
+@import '../../assets/styles/colors';
+
+header {
+    width: 100%;
+}
+
+.header {
+    height: 4.5rem;
+}
+
+.menu {
+    top:-100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: $black60;
+    display: none;
+    position: absolute;
+    transition: .2s ease-in-out;
+}
+
+.open {
+    top: 4.5rem;
+    display: unset;
+    transition: .2s ease-in-out;
+}
+
+header {
+    padding: 1.5rem;
+}
+
+header a {
+    font-size: 1.5rem;
+}
+
+header a.name {
+    color: $blue;
+}
+
+header a.active {
+    border-bottom: solid 2px $green;
+}
