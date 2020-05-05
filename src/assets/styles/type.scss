@@ -1,12 +1,13 @@
-$big-type: 3.5rem;
+$biggest-type: 3.5rem;
+$bigger-type: 3rem;
 $middle-type: 2.5rem;
 $small-type: 1.5rem;
 $body-type: 1rem;
 
 
 h1,
-h2 {
-  color: $pink;
+h2, 
+h3 {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin-top: 0;
@@ -14,21 +15,36 @@ h2 {
 
 h1 {
   font-size: $middle-type;
+  color: $pink;
 
   @media (min-width: $min-md) {
-    font-size: $big-type;
+    font-size: $biggest-type;
   }
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: $small-type;
+  color: $pink;
 
   @media (min-width: $min-sm) {
     font-size: $middle-type;
   }
 
   @media (min-width: $min-md) {
-    font-size: $big-type;
+    font-size: $biggest-type;
+  }
+}
+
+h3 {
+  font-size: $small-type;
+  color: $green;
+  text-decoration: none;
+  border-bottom: 2px solid $green;
+  margin-bottom: 1rem;
+  width: fit-content;
+
+  @media (min-width: $min-md) {
+    font-size: $bigger-type;
   }
 }
 

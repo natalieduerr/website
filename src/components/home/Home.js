@@ -11,7 +11,7 @@ import './home.scss';
 export default class Home extends React.Component {
     render() {
         return (
-            <Grid container className="home">
+            <Grid container className='home'>
                 <Header activeTab={'home'}></Header>
                 <Container>
                     <Grid item xs={12}>

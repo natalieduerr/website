@@ -1,0 +1,57 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/breakpoints";
+
+.projects {
+  @media (min-width: $min-md) {
+    padding: 2.5rem 0;
+  }
+
+  & h1 {
+    display: none;
+  }
+
+  & a {
+    & h3,
+    & h6 {
+      font-style: normal;
+    }
+  }
+
+  & h6 {
+    color: $pink;
+  }
+
+  & .project-card {
+    margin-bottom: 1.5rem;
+  }
+
+  & .preview-img-box {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-40%);
+    width: calc(5 / 12 * 100%);
+    height: 100%;
+    max-width: 560px;
+    max-height: 360px;
+
+    &.mass-hike {
+      background-color: #F2F2F2;
+    }
+
+    &.contuity {
+      background-color: #2C3353;
+    }
+
+    &.online-resources {
+      background-color: $green;
+    }
+  }
+
+  & .preview-img {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
