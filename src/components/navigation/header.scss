@@ -29,11 +29,12 @@ header {
     padding: 1.5rem;
 }
 
-header a {
+header a,
+header a span {
     font-size: 1.5rem;
 }
 
-header a.name {
+header a.name span{
     color: $blue;
 }
 

@@ -1,13 +1,16 @@
 $biggest-type: 3.5rem;
 $bigger-type: 3rem;
 $middle-type: 2.5rem;
+$small-middle-type: 2rem;
 $small-type: 1.5rem;
-$body-type: 1rem;
+$body-type: 1.25rem;
+$small-body-type: 1rem;
 
 
 h1,
 h2, 
-h3 {
+h3,
+p {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   margin-top: 0;
@@ -48,6 +51,31 @@ h3 {
   }
 }
 
+h4 {
+  font-family: "Space Mono", monospace;
+  color: $blue;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: .5rem;
+  font-size: $small-type;
+
+  @media (min-width: $min-md) {
+    font-size: $small-middle-type;
+  }
+}
+
+h5 {
+  font-family: "Space Mono", monospace;
+  color: $pink;
+  margin: 0;
+  font-weight: 700;
+  font-size: $body-type;
+
+  @media (min-width: $min-md) {
+    font-size: $small-type;
+  }
+}
+
 h6 {
   font-family: "Space Mono", monospace;
   color: $blue;
@@ -60,6 +88,18 @@ h6 {
   }
 }
 
+span, 
+p, 
+li {
+  color: $white;
+  line-height: 1.4;
+  font-size: $small-body-type;
+
+  @media (min-width: $min-md) {
+    font-size: $body-type;
+  }
+}
+
 a {
   font-family: "Space Mono", monospace;
   text-decoration: none;
@@ -67,6 +107,25 @@ a {
   &:not(.name) {
     color: $green;
     font-style: italic;
+  }
+
+  &:hover {
+    // need to do this
+  }
+}
+
+button.MuiButton-containedPrimary {
+  background-color: $green;
+  font-size: $body-type;
+  text-transform: none;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  margin-top: 1rem;
+
+  & span.MuiButton-label {
+    color: $black;
   }
 
   &:hover {
