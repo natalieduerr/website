@@ -2,16 +2,12 @@ import React from 'react';
 
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
 
 import './projects.scss';
 import Header from '../../components/navigation/Header';
 import ProjectCard from './ProjectCard';
 
 export default class Projects extends React.Component {
-  state = {
-    img: ''
-  };
   
   render() {
     return (
