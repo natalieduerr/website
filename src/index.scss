@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:400,700|Space+Mono:400,400i,700&display=swap");
+
+@import 'assets/styles/breakpoints';
+@import 'assets/styles/colors';
+@import 'assets/styles/type';
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $black;
+  font-size: $body-type;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.MuiSvgIcon-root {
+  color: $green;
+  fill: $green;
+}

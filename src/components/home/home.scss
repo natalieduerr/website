@@ -1,0 +1,15 @@
+@import "../../assets/styles/breakpoints";
+
+.home {
+    @media (min-width: $min-md) {
+        padding-top: 2.5rem;
+    }
+
+    & a {
+        font-size: 3rem;
+
+        @media (min-width: $min-md) {
+            padding-right: 2.5rem;
+        }
+    }
+}
