@@ -8,7 +8,10 @@ import Box from '@material-ui/core/Box';
 import Header from "../../components/navigation/Header";
 import './home.scss';
 
+import BuildWave from "../../components/wave/BuildWave";
+
 export default class Home extends React.Component {
+
     render() {
         return (
             <Grid container className='home'>
@@ -20,9 +23,7 @@ export default class Home extends React.Component {
                     <Grid item xs={12}>
                         <h1>Natalie Duerr</h1>
                     </Grid>
-                    <Grid item xs={12}>
-                        {/* Squiggly line here eventually */}
-                    </Grid>
+                    <BuildWave></BuildWave>
                     <Grid item xs={12}>
                         <h2> I’m a designer and front-end developer located in Boston, MA. I strive to create enchanting and accessible experiences across platforms.
                     </h2>

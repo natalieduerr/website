@@ -6,16 +6,19 @@ import Button from '@material-ui/core/Button';
 
 import './about.scss';
 import Header from '../../components/navigation/Header';
+import Footer from '../../components/navigation/Footer';
+
+import BuildWave from "../../components/wave/BuildWave";
 
 export default class About extends React.Component {
 
   render() {
     return (
-      <Grid container>
+      <Grid container direction={'column'}>
         <Header activeTab={'about'}></Header>
         <Container className='about'>
           <Grid container direction={'row'} spacing={3} justify={'center'}>
-            <Grid className = 'image' item xs={12} sm={6} md={4}>
+            <Grid className='image' item xs={12} sm={6} md={4}>
               <img src={require('../../assets/imgs/about/toronto.JPG')} alt='Natalie in Toronto.' />
               <div className='caption'>
                 <p>Toronto, ON</p>
@@ -23,19 +26,19 @@ export default class About extends React.Component {
               </div>
             </Grid>
             <Grid className='extra-photos' container spacing={2} direction={'column'} item md={3}>
-              <Grid item className = 'image'>
+              <Grid item className='image'>
                 <img src={require('../../assets/imgs/about/seattle.jpeg')} alt='Natalie at the Chihuly Museum in Seattle.' />
                 <div className='caption'>
-                <p>Seattle, WA</p>
-                <p>March 2020</p>
-              </div>
+                  <p>Seattle, WA</p>
+                  <p>March 2020</p>
+                </div>
               </Grid>
-              <Grid item className = 'image'>
+              <Grid item className='image'>
                 <img src={require('../../assets/imgs/about/coolidge.jpg')} alt='Natalie at a Q+A screening of Portrait of a Lady on fire at Coolidge Corner theatre in Boston.' />
                 <div className='caption'>
-                <p>Brookline, MA</p>
-                <p>February 2020</p>
-              </div>
+                  <p>Brookline, MA</p>
+                  <p>February 2020</p>
+                </div>
               </Grid>
             </Grid>
             <Grid item xs={12} sm={6} md={5}>
@@ -44,14 +47,16 @@ export default class About extends React.Component {
               <Button className="primary" variant="contained" color="primary">View my Résumé</Button>
             </Grid>
           </Grid>
-          {/* Squiggly line here */}
+          <Grid container justify='center'>
+            <BuildWave></BuildWave>
+          </Grid>
           <Grid container spacing={3}>
             <Grid item xs={12} md={4}>
               <h4>Education</h4>
               <h5>Northeastern University</h5>
               <span><strong>BFA in Design</strong></span><br />
               <span>Minor in Computer Science and Art History</span><br />
-              <span>Expected 2021</span> <br/> <br/>
+              <span>Expected 2021</span> <br /> <br />
               <p><strong>Relevant Courses:</strong> Interaction Design I & II, Programming Basics, Typography I & II, Graphic Design I & II, Information Design, Physical Computing, Fundamentals of Computer Science I & II, Database Design </p>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -59,26 +64,27 @@ export default class About extends React.Component {
               <h5>BevSpot</h5>
               <span><strong>Junior Designer</strong></span><br />
               <span>July 2019 - April 2020</span><br />
-              <br/>
+              <br />
               <h5>Scout Studio</h5>
               <span><strong>Designer</strong></span><br />
               <span>July 2019 - April 2020</span><br />
             </Grid>
             <Grid item xs={12} md={4}>
               <h4>Skills</h4>
-                <span>Sketch + InVision</span><br/>
-                <span>Adobe Creative Suite</span><br/>
-                <span>Figma</span><br/>
-                <span>HTML + CSS</span><br/>
-                <span>Sass/SCSS</span><br/>
-                <span>React</span><br/>
-                <span>jQuery</span><br/>
-                <span>Javascript</span><br/>
-                <span>SQL</span><br/>
-                <span>Arduino</span>
+              <span>Sketch + InVision</span><br />
+              <span>Adobe Creative Suite</span><br />
+              <span>Figma</span><br />
+              <span>HTML + CSS</span><br />
+              <span>Sass/SCSS</span><br />
+              <span>React</span><br />
+              <span>jQuery</span><br />
+              <span>Javascript</span><br />
+              <span>SQL</span><br />
+              <span>Arduino</span>
             </Grid>
           </Grid>
         </Container>
+        <Footer></Footer>
       </Grid>
     );
   }

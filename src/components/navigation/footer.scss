@@ -1,0 +1,32 @@
+@import "../../assets/styles/colors";
+
+
+footer {
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+
+    p, a {
+        margin-bottom: 0;
+        height: 1.5rem;
+    }
+
+    a span{
+        border-bottom: 1px solid transparent;
+        transition: .2s;
+    }
+
+    a:hover span {
+        border-bottom: 1px solid $black;
+    }
+
+    .with-icon {
+        display: flex;
+
+        & svg {
+            padding-right: .25rem;
+            fill: $black;
+        }
+    }
+}

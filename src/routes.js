@@ -8,7 +8,7 @@ import MassHike from "./components/projects/MassHike";
 import Contuity from "./components/projects/Contuity";
 import BevSpot from "./components/projects/BevSpot";
 import Agnes from "./components/projects/Agnes";
-import WIF from "./components/projects/WIF";
+import DPT from "./components/projects/DPT";
 import OnlineResources from "./components/projects/OnlineResources";
 
 
@@ -23,7 +23,7 @@ const Routes = props => {
                     <Route exact path="/projects/contuity" render={() => <Contuity/>}/>
                     <Route exact path="/projects/bevspot" render={() => <BevSpot/>}/>
                     <Route exact path="/projects/agnes" render={() => <Agnes/>}/>
-                    <Route exact path="/projects/wif" render={() => <WIF/>}/>
+                    <Route exact path="/projects/dpt" render={() => <DPT/>}/>
                     <Route exact path="/projects/online-resources" render={() => <OnlineResources/>}/>
                 </Switch>
             </Router>
