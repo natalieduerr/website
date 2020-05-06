@@ -27,7 +27,7 @@
 
   .extra-photos {
     display: none;
-    
+
     @media (min-width: $min-md) {
       display: unset;
     }
@@ -50,5 +50,9 @@
         opacity: 100%;
       }
     }
+  }
+
+  .wave-container {
+    margin-top: 1rem;
   }
 }

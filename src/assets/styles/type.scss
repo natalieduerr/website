@@ -133,3 +133,12 @@ button.MuiButton-containedPrimary {
   }
 }
 
+footer {
+  & span, 
+  & p,
+  & a:not(.name) {
+    font-family: "Space Mono", monospace;
+    color: $black;
+    font-size: $small-body-type
+  }
+}

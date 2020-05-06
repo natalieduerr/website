@@ -5,13 +5,14 @@ import Container from '@material-ui/core/Container';
 
 import './projects.scss';
 import Header from '../../components/navigation/Header';
+import Footer from '../../components/navigation/Footer';
 import ProjectCard from './ProjectCard';
 
 export default class Projects extends React.Component {
   
   render() {
     return (
-      <Grid container>
+      <Grid container direction={'column'}>
         <Header activeTab={'projects'}></Header>
         <Container className='projects'>
           <h1>Projects</h1>
@@ -21,11 +22,12 @@ export default class Projects extends React.Component {
               <ProjectCard name={'Contuity'} type={'Research, UX Design, and Development'} link={"contuity"} img={"contuity.png"}></ProjectCard>
               <ProjectCard name={'Ordering on BevSpot'} type={'Research, UX Design, and Visual Design'} link={"bevspot"} img={"masshike.svg"}></ProjectCard>
               <ProjectCard name={'Agnès Varda Poster'} type={'Typography, Print Design'} link={"agnes"} img={"masshike.svg"}></ProjectCard>
-              <ProjectCard name={'Women in Film'} type={'Typography, Print Design'} link={"wif"} img={"masshike.svg"}></ProjectCard>
+              <ProjectCard name={'Drink Price Tool Landing Page'} type={'Web Design and Development'} link={"dpt"} img={"masshike.svg"}></ProjectCard>
               <ProjectCard name={'Online Resources'} type={'UX Design and Visual Design'} link={"online-resources"} img={"resources.svg"}></ProjectCard>
             </Grid>
           </Grid>
         </Container>
+        <Footer></Footer>
       </Grid>
     );
   }
