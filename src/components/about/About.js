@@ -55,7 +55,7 @@ export default class About extends React.Component {
               <h4>Education</h4>
               <h5>Northeastern University</h5>
               <span><strong>BFA in Design</strong></span><br />
-              <span>Minor in Computer Science and Art History</span><br />
+              <span>Minors in Computer Science and Art History</span><br />
               <span>Expected 2021</span> <br /> <br />
               <p><strong>Relevant Courses:</strong> Interaction Design I & II, Programming Basics, Typography I & II, Graphic Design I & II, Information Design, Physical Computing, Fundamentals of Computer Science I & II, Database Design </p>
             </Grid>
@@ -64,10 +64,22 @@ export default class About extends React.Component {
               <h5>BevSpot</h5>
               <span><strong>Junior Designer</strong></span><br />
               <span>July 2019 - April 2020</span><br />
+              <span>Boston, MA</span><br />
               <br />
               <h5>Scout Studio</h5>
-              <span><strong>Designer</strong></span><br />
+              <span><strong>Designer + Front-end Developer</strong></span><br />
               <span>July 2019 - April 2020</span><br />
+              <span>Boston, MA</span><br />
+              <br />
+              <h5>OHO Interactive</h5>
+              <span><strong>Junior Designer</strong></span><br />
+              <span>July 2018 - December 2018</span><br />
+              <span>Somerville, MA</span><br />
+              <br />
+              <h5>Tastemakers</h5>
+              <span><strong>Designer</strong></span><br />
+              <span>January 2017 - January 2019</span><br />
+              <span>Boston, MA</span><br />
             </Grid>
             <Grid item xs={12} md={4}>
               <h4>Skills</h4>

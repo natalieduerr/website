@@ -45,6 +45,28 @@
     &.online-resources {
       background-color: $green;
     }
+
+    &.dpt {
+      background-color: $blue;
+    }
+
+    &.bevspot {
+      background-color: #F87D59;
+
+      & > img.preview-img {
+        width: 70%;
+      }
+    }
+
+    &.agnes {
+      background-color: $pink;
+
+      & > img.preview-img {
+        top: 0;
+        transform: translateX(-50%);
+        width: auto;
+      }
+    }
   }
 
   & .preview-img {
@@ -53,5 +75,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    max-height: 300px;
+
   }
 }
