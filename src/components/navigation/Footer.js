@@ -24,7 +24,7 @@ export default class Navigation extends React.Component {
                                 <p>{"Created with" + " <3 " + "by Natalie Duerr, 2020"}</p>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md container spacing={3} direction={'row'} justify={'flex-end'}>
+                        <Grid item className={'social'} xs={12} md container spacing={3} direction={'row'}>
                             <Grid item>
                                 <Link className={'with-icon'} to='https://twitter.com/natalieduerr98'><TwitterIcon/><span> Find me on Twitter</span></Link>
                             </Grid>

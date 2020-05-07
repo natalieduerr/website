@@ -6,7 +6,6 @@ $small-type: 1.5rem;
 $body-type: 1.25rem;
 $small-body-type: 1rem;
 
-
 h1,
 h2, 
 h3,
@@ -123,13 +122,14 @@ button.MuiButton-containedPrimary {
   padding: 1rem 2rem;
   border-radius: 0;
   margin-top: 1rem;
+  transition: .2s;
 
   & span.MuiButton-label {
     color: $black;
   }
 
   &:hover {
-    // need to do this
+    background-color: $green-hover;
   }
 }
 
