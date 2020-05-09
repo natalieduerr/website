@@ -7,7 +7,7 @@ $body-type: 1.25rem;
 $small-body-type: 1rem;
 
 h1,
-h2, 
+h2,
 h3,
 p {
   font-family: "Manrope", sans-serif;
@@ -55,7 +55,7 @@ h4 {
   color: $blue;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-size: $small-type;
 
   @media (min-width: $min-md) {
@@ -87,8 +87,22 @@ h6 {
   }
 }
 
-span, 
-p, 
+blockquote {
+  font-family: "Space Mono", monospace;
+  color: #ffa294;
+  font-style: italic;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: $small-type;
+
+  @media (min-width: $min-md) {
+    font-size: $small-middle-type
+    ;
+  }
+}
+
+span,
+p,
 li {
   color: $white;
   line-height: 1.4;
@@ -108,9 +122,14 @@ a {
     font-style: italic;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     // need to do this
   }
+}
+
+p.caption {
+  font-size: $small-body-type;
 }
 
 button.MuiButton-containedPrimary {
@@ -122,23 +141,24 @@ button.MuiButton-containedPrimary {
   padding: 1rem 2rem;
   border-radius: 0;
   margin-top: 1rem;
-  transition: .2s;
+  transition: 0.2s;
 
   & span.MuiButton-label {
     color: $black;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $green-hover;
   }
 }
 
 footer {
-  & span, 
+  & span,
   & p,
   & a:not(.name) {
     font-family: "Space Mono", monospace;
     color: $black;
-    font-size: $small-body-type
+    font-size: $small-body-type;
   }
 }

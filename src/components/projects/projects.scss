@@ -47,7 +47,16 @@
     }
 
     &.dpt {
-      background-color: $blue;
+      background-color: #212D3B;
+
+      & > img.preview-img {
+        width: 85%;
+        bottom: 0;
+        top: unset;
+        transform: translateX(-50%);
+        max-height: unset;
+
+      }
     }
 
     &.bevspot {
