@@ -11,6 +11,9 @@ import './home.scss';
 import BuildWave from "../../components/wave/BuildWave";
 
 export default class Home extends React.Component {
+    componentDidMount(){
+        document.title = "Natalie Duerr"
+      }
 
     render() {
         return (

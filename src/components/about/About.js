@@ -11,6 +11,9 @@ import Footer from '../../components/navigation/Footer';
 import BuildWave from "../../components/wave/BuildWave";
 
 export default class About extends React.Component {
+  componentDidMount(){
+    document.title = "About - Natalie Duerr"
+  }
 
   render() {
     return (
