@@ -27,10 +27,12 @@ export default class ProjectHeader extends React.Component {
             <h5>Date</h5>
             <p>{this.props.date}</p>
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
+          {this.props.with !== null ?          
+           <Grid item xs={12} sm={6} md={3}>
             <h5>In collaboration with</h5>
             <p>{this.props.with}</p>
-          </Grid>
+          </Grid> : null}
+
         </Grid>
         </section>
       </Grid>
