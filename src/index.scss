@@ -25,3 +25,12 @@ code {
 header {
   z-index: 9999999999;
 }
+
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+  width: 100%;
+}

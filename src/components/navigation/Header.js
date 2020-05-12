@@ -20,15 +20,15 @@ export default class Navigation extends React.Component {
             <header>
                 {this.props.activeTab === 'home' ? null :
                     <Box display={{ xs: 'none', md: 'block' }}>
-                        <Grid container xs={12}>
-                            <Grid container xs justify="flex-start">
+                        <Grid container>
+                            <Grid container item xs justify="flex-start">
                                 <Grid item>
                                     <Link to='/' className='name'>
                                         <span>natalie duerr.</span>
                                     </Link>
                                 </Grid>
                             </Grid>
-                            <Grid container xs justify="flex-end" spacing={3}>
+                            <Grid container xs item justify="flex-end" spacing={3}>
                                 <Grid item>
                                     <Link to='/projects' className={this.props.activeTab === 'projects' ? 'active' : null} >Projects</Link>
                                 </Grid>
@@ -43,13 +43,13 @@ export default class Navigation extends React.Component {
                     </Box>
                 }
                 <Box display={{ md: 'none' }}>
-                    <Grid container xs={12}>
-                        <Grid container xs justify='flex-end' className='header'>
+                    <Grid container>
+                        <Grid container justify='flex-end' className='header'>
                             <Grid item>
                                 {!this.state.menuOpened ? <MenuIcon onClick={() => this.setState({ menuOpened: !this.state.menuOpened })} /> : <CloseIcon onClick={() => this.setState({ menuOpened: !this.state.menuOpened })} />}
                             </Grid>
                         </Grid>
-                        <Grid container xs align='center' direction='column' className={this.state.menuOpened ? 'menu open' : 'menu'}>
+                        <Grid container align='center' direction='column' className={this.state.menuOpened ? 'menu open' : 'menu'}>
                             <Grid item>
                                 <Link to='/' className={this.props.activeTab === 'home' ? 'active' : ''}>
                                     Home

@@ -9,7 +9,7 @@ import * as Constants from './Options';
 export default class ImageBlock extends React.Component {
     render() {
         return (
-            <div classNme={'photo-block'}>
+            <div className={'photo-block'}>
                 <Grid container direction={'row'} className={'photo-container'}>
                     <SRLWrapper options={Constants.options}>
                         {this.props.images.map((image) => (
