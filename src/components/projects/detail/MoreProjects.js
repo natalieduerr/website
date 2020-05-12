@@ -15,7 +15,7 @@ export default class MoreProjects extends React.Component {
                     </Grid>
                     <Grid item xs={12} sm container direction={'column'} alignItems={'flex-end'}>
                         <p>Next Project</p>
-                        <Link to={'/projects/' + this.props.nextLink}>{this.props.next}</Link>
+                        <Link  to={'/projects/' + this.props.nextLink}>{this.props.next}</Link>
                     </Grid>
                 </Grid>
             </Container>
