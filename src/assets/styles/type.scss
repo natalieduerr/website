@@ -122,10 +122,10 @@ a {
     font-style: italic;
   }
 
-  &:hover,
-  &:focus {
-    // need to do this
-  }
+  // &:not(.name):hover,
+  // &:not(.name):focus {
+  //   // do this
+  // }
 }
 
 p.caption {

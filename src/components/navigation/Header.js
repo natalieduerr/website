@@ -7,6 +7,8 @@ import Box from '@material-ui/core/Box';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 
+import Resume from "../../assets/Duerr_Natalie_Resume.pdf";
+
 import './header.scss';
 
 export default class Navigation extends React.Component {
@@ -36,7 +38,7 @@ export default class Navigation extends React.Component {
                                     <Link to='/about' className={this.props.activeTab === 'about' ? 'active' : null}>About</Link>
                                 </Grid>
                                 <Grid item>
-                                    <Link to='/resume'>Résumé</Link>
+                                    <a href={Resume} rel="noopener noreferrer" target="_blank">Résumé</a>
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -62,7 +64,7 @@ export default class Navigation extends React.Component {
                                 <Link to='/about' className={this.props.activeTab === 'about' ? 'active' : null}>About</Link>
                             </Grid>
                             <Grid item>
-                                <Link to='/resume'>Résumé</Link>
+                                <a href={Resume} rel="noopener noreferrer" target="_blank">Résumé</a>
                             </Grid>
                         </Grid>
                     </Grid>
