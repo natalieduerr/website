@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 
+import Resume from "../../assets/Duerr_Natalie_Resume.pdf";
+
 import Header from "../../components/navigation/Header";
 import './home.scss';
 
@@ -41,7 +43,7 @@ export default class Home extends React.Component {
                                     <Link to='/about'>About</Link>
                                 </Grid>
                                 <Grid item>
-                                    <Link to='/resume'>Résumé</Link>
+                                    <a href={Resume} rel="noopener noreferrer" target="_blank">Résumé</a>
                                 </Grid>
                             </Grid>
                         </Box>

@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
+import LaunchIcon from '@material-ui/icons/Launch';
 
 import './about.scss';
 import Header from '../../components/navigation/Header';
@@ -65,22 +67,22 @@ export default class About extends React.Component {
               </Grid>
               <Grid item xs={12} md={4}>
                 <h4>Experience</h4>
-                <h5>BevSpot</h5>
+                <a href="https://www.bevspot.com/" rel="noopener noreferrer" target="_blank"><h5>BevSpot</h5><LaunchIcon /></a>
                 <span><strong>Junior Designer</strong></span><br />
                 <span>July 2019 - April 2020</span><br />
                 <span>Boston, MA</span><br />
                 <br />
-                <h5>Scout Studio</h5>
+                <a href="https://web.northeastern.edu/scout/" rel="noopener noreferrer" target="_blank"><h5>Scout Studio</h5><LaunchIcon /></a>
                 <span><strong>Designer + Front-end Developer</strong></span><br />
                 <span>July 2019 - April 2020</span><br />
                 <span>Boston, MA</span><br />
                 <br />
-                <h5>OHO Interactive</h5>
+                <a href="https://www.oho.com/" rel="noopener noreferrer" target="_blank"><h5>OHO Interactive</h5><LaunchIcon /></a>
                 <span><strong>Junior Designer</strong></span><br />
                 <span>July 2018 - December 2018</span><br />
                 <span>Somerville, MA</span><br />
                 <br />
-                <h5>Tastemakers</h5>
+                <a href="https://www.tastemakersmag.com/" rel="noopener noreferrer" target="_blank"><h5>Tastemakers</h5><LaunchIcon /></a>
                 <span><strong>Designer</strong></span><br />
                 <span>January 2017 - January 2019</span><br />
                 <span>Boston, MA</span><br />

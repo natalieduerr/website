@@ -18,6 +18,10 @@
         display: block;
       }
     }
+
+    & a:hover, a:focus {
+      text-decoration: underline;  
+    }
   }
 
   .MuiGrid-container > .MuiGrid-item {
@@ -53,6 +57,10 @@
 
   .caption {
     padding: 1rem; 
+       
+    & a:hover, a:focus {
+      text-decoration: underline;  
+    }
 
     @media (min-width: $min-sm) {
       padding: 2rem 2rem 0 0;
