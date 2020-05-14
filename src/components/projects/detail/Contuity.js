@@ -30,15 +30,15 @@ export default class Projects extends React.Component {
                 <ProjectHeader title={'Contuity'} category={['Research', 'UX Design', 'Front-end Development']} role={'Designer at Scout Studio'} date={'Jan 2019 - April 2019'} with={'Bahar Sheiki, Caitlin Wang, Eiry Lynch, Stephanie Ji, Ryan Hughes'}></ProjectHeader>
                 <Grid item xs={12} sm={10} md={8}>
                   <h4>About</h4>
-                  <p>My client for my third semester with Scout was Contuity, a note-taking tool that focuses on helping people stay connected. The app is designed for people who have a lot of relationships to keep track of and want to prevent people from slipping through the cracks. Unlike other apps already on the market, Contuity aims to be supportive, encouraging, and mindful. Contuity knows how busy its users are and wants to alleviate the pressure so that the user feels in control.</p>
+                  <p>My third client with Scout was Contuity, a note-taking tool that focuses on helping people stay connected. The app is designed for people who have a lot of relationships to keep track of and want to prevent people from slipping through the cracks. Unlike other apps already on the market, Contuity aims to be supportive, encouraging, and mindful. Contuity knows how busy its users are and wants to alleviate the pressure so that the user feels in control.</p>
                   <Link to={'https://www.figma.com/file/3PGwQGgW7UHH9WQZ0hTkUb/Hand-off-File-Copy?node-id=1%3A2'}>
                     <Button className="primary" variant="contained" color="primary">View Figma Project</Button>
                   </Link>
                 </Grid>
                 <Grid item xs={12} sm={10} md={8}>
                   <h4>Discovery</h4>
-                  <p>The first step in the process was understanding what Contuity was and wasn't and how that compares to what already exists. Our client was very passionate and had many ideas of features that we could incorporate. With this information, we conducted two different styles of interviews. One focused on how extremely busy people currently keep track of all their connections and things they need to get done. The second focused more on features and what people thought was the most important for keeping them organized.</p>
-                  <p>My team and I were able to collaborate on questions and the strategy, which led to us creating a user test plan. Each of us followed this plan and conducted three interviews with people involved in multiple organizations, working several jobs, or who were just generally busy. This gave us a wealth of information. Below is some of the questions we asked (left) and one of the results from the sorting exercise (right).</p>
+                  <p>The first step in the process was understanding what Contuity was and wasn't and how that compares to what already exists. With ideas from the client and pre-existing applications, we conducted two different styles of interviews. One focused on how extremely busy people currently keep track of all their connections and things they need to get done, while the other focused more on features and what people thought was the most important for keeping them organized.</p>
+                  <p>My team and I were able to collaborate on the questions and strategy, which led to us creating a user test plan. Each of us followed this plan and conducted three interviews with people involved in multiple organizations, working several jobs, or who were just generally busy. This gave us a wealth of information. Below are some of the questions we asked and an example of the results from the sorting exercise.</p>
                 </Grid>
                 <Grid container spacing={2} alignItems={'flex-start'} justify={'center'}>
                   <Grid item xs={12} sm={4}>
@@ -52,7 +52,8 @@ export default class Projects extends React.Component {
                     <img src={require('../../../assets/imgs/projects/contuity/sorting_1.png')} alt='A wireframe showing how the user would input how many tickets they wanted and where they would like to be picked up.' />
                   </Grid>
                 </Grid>
-                <Grid item xs={12} sm={8}>
+                <Grid item xs={12} sm={10} md={8}>
+                  <h4>Personas</h4>
                   <p>Through these interviews, we were able to gain insight into the hectic lives of several people. These user interviews led to the creation of personas. We narrowed our users down to four main types of people...</p>
                   <ol>
                     <li><b>A young entrepreneur with a full-time marketing job.</b>  This person is actively networking inside and outside of the office and is constantly meeting new people. They need a way to remember everyone and keep track of their thoughts. They use LinkedIn to connect with other professionals, as well as Slack and Outlook to communicate with co-workers. To manage their personal life, they use Google products.</li>
