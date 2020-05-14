@@ -35,7 +35,7 @@ export default class Home extends React.Component {
                     </h2>
                         </Grid>
                         <Box display={{ xs: 'none', md: 'unset' }}>
-                            <Grid container item xs={12}>
+                            <Grid className={'links'} container item xs={12}>
                                 <Grid item>
                                     <Link to='/projects'>Projects</Link>
                                 </Grid>
