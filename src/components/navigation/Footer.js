@@ -21,7 +21,7 @@ export default class Navigation extends React.Component {
                     <Grid container justify={'space-between'} alignContent={'center'}>
                         <Grid item xs={12} md container spacing={3}>
                             <Grid item>
-                                <p>{"Created with" + " <3 " + "by Natalie Duerr, 2020"}</p>
+                                <p>{"Created with <3 by Natalie Duerr, 2020"}</p>
                             </Grid>
                         </Grid>
                         <Grid item className={'social'} xs={12} md container spacing={3} direction={'row'}>
