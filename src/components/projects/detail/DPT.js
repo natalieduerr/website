@@ -69,7 +69,7 @@ export default class DPT extends React.Component {
               </Grid>
             </Container>
           </section>
-          <MoreProjects prev={'Agnés Varda Poster'} prevLink={'agnes'} next={'Online Resources'} nextLink={'online-resources'}></MoreProjects>
+          <MoreProjects prev={'A Year in Film'} prevLink={'film'} next={'Online Resources'} nextLink={'online-resources'}></MoreProjects>
           <Footer></Footer>
         </Grid>
       </div>

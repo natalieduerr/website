@@ -82,7 +82,7 @@ export default class BevSpot extends React.Component {
               </Grid>
             </Container>
           </section>
-          <MoreProjects prev={'Contuity'} prevLink={'contuity'} next={'Agnès Varda Poster'} nextLink={'agnes'}></MoreProjects>
+          <MoreProjects prev={'Contuity'} prevLink={'contuity'} next={'A Year in Film'} nextLink={'film'}></MoreProjects>
           <Footer></Footer>
         </Grid>
       </div>
