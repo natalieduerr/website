@@ -67,13 +67,11 @@
       }
     }
 
-    &.agnes {
+    &.film {
       background-color: $pink;
 
       & > img.preview-img {
-        top: 0;
-        transform: translateX(-50%);
-        width: auto;
+        width: 120%;
       }
     }
   }

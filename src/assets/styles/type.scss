@@ -41,12 +41,14 @@ h3 {
   font-size: $small-type;
   color: $green;
   text-decoration: none;
-  border-bottom: 2px solid $green;
+  text-decoration: underline;
   margin-bottom: 1rem;
   width: fit-content;
 
   @media (min-width: $min-md) {
     font-size: $bigger-type;
+    border-bottom: 2px solid $green;
+    text-decoration: none;
   }
 }
 
@@ -96,8 +98,7 @@ blockquote {
   font-size: $small-type;
 
   @media (min-width: $min-md) {
-    font-size: $small-middle-type
-    ;
+    font-size: $small-middle-type;
   }
 }
 
@@ -121,11 +122,6 @@ a {
     color: $green;
     font-style: italic;
   }
-
-  // &:not(.name):hover,
-  // &:not(.name):focus {
-  //   // do this
-  // }
 }
 
 p.caption {
