@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -10,7 +9,6 @@ import Footer from '../../../components/navigation/Footer';
 import ProjectHeader from './ProjectHeader';
 import ImageBlock from './ImageBlock';
 import MoreProjects from './MoreProjects';
-
 
 import './project.scss';
 
@@ -31,9 +29,9 @@ export default class Projects extends React.Component {
                 <Grid item xs={12} sm={10} md={8}>
                   <h4>About</h4>
                   <p>My third client with Scout was Contuity, a note-taking tool that focuses on helping people stay connected. The app is designed for people who have a lot of relationships to keep track of and want to prevent people from slipping through the cracks. Unlike other apps already on the market, Contuity aims to be supportive, encouraging, and mindful. Contuity knows how busy its users are and wants to alleviate the pressure so that the user feels in control.</p>
-                  <Link to={'https://www.figma.com/file/3PGwQGgW7UHH9WQZ0hTkUb/Hand-off-File-Copy?node-id=1%3A2'}>
+                  <a href={'https://www.figma.com/file/3PGwQGgW7UHH9WQZ0hTkUb/Hand-off-File-Copy?node-id=1%3A2'}>
                     <Button className="primary" variant="contained" color="primary">View Figma Project</Button>
-                  </Link>
+                  </a>
                 </Grid>
                 <Grid item xs={12} sm={10} md={8}>
                   <h4>Discovery</h4>
@@ -115,7 +113,7 @@ export default class Projects extends React.Component {
               </Grid>
             </Container>
           </section>
-          <MoreProjects prev={'Mass Hike'} prevLink={'mass-hike'} next={'Contuity'} nextLink={'contuity'}></MoreProjects>
+          <MoreProjects prev={'Mass Hike'} prevLink={'mass-hike'} next={'Ordering on BevSpot'} nextLink={'bevspot'}></MoreProjects>
           <Footer></Footer>
         </Grid>
       </div>

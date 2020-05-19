@@ -9,7 +9,7 @@ export default class MoreProjects extends React.Component {
         return (
             <Container>
                 <Grid justify={'space-between'} container direction={'row'} className={'more-projects'}>
-                    <Grid item xs={12} sm>
+                    <Grid item xs={12} sm container direction={'column'} alignItems={'flex-start'}>
                         <p>Previous Project</p>
                         <Link to={'/projects/' + this.props.prevLink}>{this.props.prev}</Link>
                     </Grid>

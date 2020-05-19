@@ -82,7 +82,7 @@ export default class Projects extends React.Component {
               </Grid>
             </Container>
           </section>
-          <MoreProjects prev={'Online Resources'} prevLink={'online-resources'} next={'Mass Hike'} nextLink={'mass-hike'}></MoreProjects>
+          <MoreProjects prev={'Drink Price Tool Landing Page'} prevLink={'DPT'} next={'Mass Hike'} nextLink={'mass-hike'}></MoreProjects>
           <Footer></Footer>
         </Grid >
       </div>

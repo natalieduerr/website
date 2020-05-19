@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -10,7 +9,6 @@ import Footer from '../../../components/navigation/Footer';
 import ProjectHeader from './ProjectHeader';
 import ImageBlock from './ImageBlock';
 import MoreProjects from './MoreProjects';
-
 
 import './project.scss';
 
@@ -31,9 +29,9 @@ export default class Projects extends React.Component {
                 <Grid item xs={12} sm={10} md={8}>
                   <h4>About</h4>
                   <p>During my second semester at Scout, I worked with Mass Hike as a designer. Mass Hike is a non-profit focused on making nature more accessible to Bostonians. Mass Hike runs trips to and from local reservations and parks, and from there, customers are free to explore or go on a hike with the team lead. Mass Hike targets two groups: young professionals and low-income community members. For distinct reasons, these two groups have a difficult time making it out of the city. Mass Hike needed a brand that matched its unique mission, a marketing website that captured the fun of nature, and a ticket-purchasing system that was simple and easy to use.</p>
-                  <Link to={'https://masshike.org/'}>
+                  <a href={'https://masshike.org/'}>
                     <Button className="primary" variant="contained" color="primary">View Live Site</Button>
-                  </Link>
+                  </a>
                 </Grid>
                 <Grid item xs={12} sm={10} md={8}>
                   <h4>Discovery</h4>
