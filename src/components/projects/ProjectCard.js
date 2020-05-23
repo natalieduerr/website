@@ -31,8 +31,8 @@ export default class ProjectCard extends React.Component {
           className={'project-card ' + this.props.link}
         >
           <Link to={'./projects/' + this.props.link}>
-            <h3>{this.props.name}</h3>
-            <h6>{this.props.type}</h6>
+            <h2 className='h3'>{this.props.name}</h2>
+            <h3 className='h6'>{this.props.type}</h3>
           </Link>
         </Grid>
         <Grid item md={5}>

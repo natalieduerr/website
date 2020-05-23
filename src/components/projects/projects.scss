@@ -1,5 +1,7 @@
 @import '../../assets/styles/colors';
 @import '../../assets/styles/breakpoints';
+@import '../../assets/styles/mixins';
+
 
 .projects {
   @media (min-width: $min-md) {
@@ -7,17 +9,17 @@
   }
 
   & h1 {
-    display: none;
+    @include hidden();
   }
 
   & a {
-    & h3,
-    & h6 {
+    & .h3,
+    & .h6 {
       font-style: normal;
     }
   }
 
-  & h6 {
+  & .h6 {
     color: $pink;
   }
 

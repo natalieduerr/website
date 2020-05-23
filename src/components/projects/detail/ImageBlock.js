@@ -14,7 +14,7 @@ export default class ImageBlock extends React.Component {
           <SRLWrapper options={Constants.options}>
             {this.props.images.map((image) => (
               <Grid item xs={12} sm={image.size == null ? 12 / this.props.images.length : image.size} key={image.id}>
-                <img src={image.img} alt={image.alt} />
+                {image.img !== undefined ? <img src={image.img} alt={image.alt} /> : null}
               </Grid>
             ))}
           </SRLWrapper>
