@@ -7,15 +7,19 @@ $body-type: 1.25rem;
 $small-body-type: 1rem;
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3
 p {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
   margin-top: 0;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: $middle-type;
   color: $pink;
 
@@ -24,7 +28,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: $small-type;
   color: $pink;
 
@@ -37,35 +42,35 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.h3 {
   font-size: $small-type;
   color: $green;
-  text-decoration: none;
-  text-decoration: underline;
   margin-bottom: 1rem;
   width: fit-content;
 
   @media (min-width: $min-md) {
     font-size: $bigger-type;
-    border-bottom: 2px solid $green;
-    text-decoration: none;
   }
 }
 
-h4 {
+h4,
+.h4 {
   font-family: 'Space Mono', monospace;
   color: $blue;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 0.5rem;
   font-size: $small-type;
+  font-weight: 700;
 
   @media (min-width: $min-md) {
     font-size: $small-middle-type;
   }
 }
 
-h5 {
+h5,
+.h5 {
   font-family: 'Space Mono', monospace;
   color: $pink;
   margin: 0;
@@ -77,12 +82,15 @@ h5 {
   }
 }
 
-h6 {
+h6,
+.h6 {
   font-family: 'Space Mono', monospace;
   color: $blue;
   margin: 0;
   font-weight: 400;
   font-size: $body-type;
+  border-bottom: none;
+  text-decoration: none;
 
   @media (min-width: $min-md) {
     font-size: $small-type;
@@ -121,6 +129,15 @@ a {
   &:not(.name) {
     color: $green;
     font-style: italic;
+  }
+
+  h3, .h3 {
+    text-decoration: underline;
+
+    @media (min-width: $min-md) {
+      border-bottom: 2px solid $green;
+      text-decoration: none;
+    }
   }
 }
 

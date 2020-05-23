@@ -19,7 +19,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div className={'page'}>
+      <main role="main" className={'page'}>
         <Grid container className='home'>
           <Header activeTab={'home'}></Header>
           <Container>
@@ -53,7 +53,7 @@ export default class Home extends React.Component {
             </Box>
           </Container>
         </Grid>
-      </div>
+      </main>
     );
   }
 }
