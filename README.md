@@ -4,4 +4,4 @@ My name is Natalie Duerr and I'm a UI/UX designer focused on creating meaningful
 
 This portfolio was designed and developed by me!
 
-Found a bug or a typo, reach out: natalieduerr98@gmail.com
+Found a bug or a typo? Reach out to natalieduerr98@gmail.com
