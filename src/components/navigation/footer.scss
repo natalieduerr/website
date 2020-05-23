@@ -21,7 +21,8 @@ footer {
         transition: .2s;
     }
 
-    a:hover span {
+    a:hover span,
+    a:focus span {
         border-bottom: 1px solid $black;
     }
 

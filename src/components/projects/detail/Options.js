@@ -9,11 +9,11 @@ export const options = {
     showFullscreenButton: false,
     showNextButton: false,
     showPrevButton: false,
-    },
+  },
   caption: {
-    showCaption: false
+    showCaption: false,
   },
   thumbnails: {
     showThumbnails: false,
-  }
+  },
 };

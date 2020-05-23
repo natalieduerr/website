@@ -1,7 +1,6 @@
-@import "../../assets/styles/breakpoints";
-@import "../../assets/styles/colors";
-@import "../../assets/styles/mixins";
-
+@import '../../assets/styles/breakpoints';
+@import '../../assets/styles/colors';
+@import '../../assets/styles/mixins';
 
 .about {
   @media (min-width: $min-md) {
@@ -30,8 +29,8 @@
     width: fit-content;
 
     & h5 {
-      @include underline($pink)
-  }
+      @include underline($pink);
+    }
 
     & .MuiSvgIcon-root {
       color: $pink;
@@ -40,7 +39,7 @@
     }
   }
 
-  .MuiGrid-root:not(.extra-photos) > .image{
+  .MuiGrid-root:not(.extra-photos) > .image {
     height: 100%;
   }
 

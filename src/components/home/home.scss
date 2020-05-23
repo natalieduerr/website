@@ -1,19 +1,18 @@
-@import "../../assets/styles/breakpoints";
-@import "../../assets/styles/mixins";
-@import "../../assets/styles/colors";
-
+@import '../../assets/styles/breakpoints';
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/colors';
 
 .home {
-    @media (min-width: $min-md) {
-        padding-top: 2.5rem;
-    }
+  @media (min-width: $min-md) {
+    padding-top: 2.5rem;
+  }
 
-    & .links .MuiGrid-item {
-        padding-right: 2.5rem
-    }
+  & .links .MuiGrid-item {
+    padding-right: 2.5rem;
+  }
 
-    & a {
-        font-size: 3rem;
-        @include underline($green);
-    }
+  & a {
+    font-size: 3rem;
+    @include underline($green);
+  }
 }
