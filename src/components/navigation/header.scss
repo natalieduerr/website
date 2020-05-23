@@ -24,6 +24,10 @@ header {
             @include underline($green);
         }
 
+        &.name {
+            @include underline($blue);
+        }
+
         &.active {
             border-bottom: solid 2px $green;
         }

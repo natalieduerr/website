@@ -1,7 +1,6 @@
-@import "../../../assets/styles/breakpoints.scss";
-@import "../../../assets/styles/colors.scss";
-@import "../../../assets/styles/mixins.scss";
-
+@import '../../../assets/styles/breakpoints.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/mixins.scss';
 
 .project {
   .project-header {
@@ -21,8 +20,9 @@
       }
     }
 
-    & a:hover, a:focus {
-      text-decoration: underline;  
+    & a:hover,
+    a:focus {
+      text-decoration: underline;
     }
   }
 
@@ -42,6 +42,8 @@
   .photo-container {
     width: 100vw;
     background-color: $green;
+    display: flex;
+    justify-content: center;
 
     & > div {
       display: flex;
@@ -58,15 +60,20 @@
   }
 
   .caption {
-    padding: 1rem; 
-       
-    & a:hover, a:focus {
-      text-decoration: underline;  
+    padding: 1rem;
+
+    & a:hover,
+    a:focus {
+      text-decoration: underline;
     }
 
     @media (min-width: $min-sm) {
       padding: 2rem 2rem 0 0;
     }
+  }
+
+  ol li {
+    padding: 0.5rem;
   }
 }
 
@@ -76,7 +83,7 @@
   }
 
   & p {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   & a {
