@@ -2,7 +2,33 @@
 @import '../../assets/styles/mixins';
 @import '../../assets/styles/colors';
 
+.games.page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+#first-circle, .sprinkle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  background-color: red;
+  position: absolute;
+
+  &.hide {
+    display: none;
+  }
+}
+
 .home {
+  z-index: 2;
+
   @media (min-width: $min-md) {
     padding-top: 2.5rem;
   }
@@ -14,5 +40,81 @@
   & a {
     font-size: 3rem;
     @include underline($green);
+  }
+
+  header {
+    @media (min-width: $min-md) {
+      display: none;
+    }
+  }
+
+  &.hide {
+    top: -100vh;
+  }
+}
+
+.home,
+.game {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  transition: 500ms;
+}
+
+.game {
+  z-index: 0;
+
+  &.hide {
+    top: 100vh;
+  }
+
+  p {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+}
+
+.play {
+  visibility: hidden;
+  z-index: 2;
+
+  @media (min-width: $min-md) {
+    visibility: visible;
+    position: fixed;
+    bottom: 2rem;
+
+    & button {
+      background-color: $green;
+      border-radius: 3rem 0 0 3rem;
+      right: -15rem;
+      transition: 200ms;
+      padding: 0.75rem;
+
+      & span,
+      svg {
+        font-size: 2rem;
+        text-transform: none;
+        color: $black;
+        font-family: 'Space Mono', monospace;
+        font-style: italic;
+      }
+
+      & svg {
+        padding-right: 1rem;
+        font-size: 3rem;
+      }
+    }
+
+    & .MuiButton-root:hover {
+      background-color: $green;
+    }
+
+    &.stay-open button,
+    & button:hover {
+      right: 0rem;
+    }
   }
 }
