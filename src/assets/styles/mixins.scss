@@ -1,4 +1,5 @@
 @import '../../assets/styles/colors';
+@import '../../assets/styles/breakpoints';
 
 @mixin underline($color) {
   &::after {
