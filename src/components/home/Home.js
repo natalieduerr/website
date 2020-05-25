@@ -83,7 +83,7 @@ export default class Home extends React.Component {
         </div>
         <Grid container className={this.state.game ? 'home hide' : 'home'}>
           <Header activeTab={'home'}></Header>
-          <Container>
+          <Container className={'home-content'}>
             <Grid item xs={12}>
               <h6>Hi, my name is</h6>
             </Grid>

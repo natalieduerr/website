@@ -15,6 +15,8 @@ import BevSpot from './components/projects/detail/BevSpot';
 import Film from './components/projects/detail/Film';
 import DPT from './components/projects/detail/DPT';
 import OnlineResources from './components/projects/detail/OnlineResources';
+import NoMatch from './components/home/404';
+
 
 const Routes = (props) => {
   return (
@@ -35,6 +37,7 @@ const Routes = (props) => {
                   <Route exact path='/projects/film' render={() => <Film />} />
                   <Route exact path='/projects/dpt' render={() => <DPT />} />
                   <Route exact path='/projects/online-resources' render={() => <OnlineResources />} />
+                  <Route component={NoMatch} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

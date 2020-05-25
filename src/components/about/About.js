@@ -86,7 +86,7 @@ export default class About extends React.Component {
                   <br />
                   <span>Minors in Computer Science and Art History</span>
                   <br />
-                  <span>Expected 2021</span> <br /> <br />
+                  <span>Expected 2021</span> <br />
                   <p>
                     <strong>Relevant Courses:</strong> Interaction Design I & II, Programming Basics, Typography I & II,
                     Graphic Design I & II, Information Design, Physical Computing, Fundamentals of Computer Science I &

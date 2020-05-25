@@ -60,7 +60,7 @@ export default class Navigation extends React.Component {
                 )}
               </Grid>
             </Grid>
-            <Grid container align='center' direction='column' className={this.state.menuOpened ? 'menu open' : 'menu'}>
+            <Grid container alignItems='center' direction='column' className={this.state.menuOpened ? 'menu open' : 'menu'}>
               <Grid item>
                 <Link to='/' className={this.props.activeTab === 'home' ? 'active' : ''}>
                   Home
