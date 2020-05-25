@@ -67,7 +67,7 @@ export default class Navigation extends React.Component {
                 </Link>
               </Grid>
               <Grid item>
-                <Link to='/explore' className={this.props.activeTab === 'projects' ? 'active' : null}>
+                <Link to='/projects' className={this.props.activeTab === 'projects' ? 'active' : null}>
                   Projects
                 </Link>
               </Grid>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -25,16 +24,16 @@ export default class Navigation extends React.Component {
             </Grid>
             <Grid item className={'social'} xs={12} md container spacing={3} direction={'row'}>
               <Grid item>
-                <Link className={'with-icon'} to='https://twitter.com/natalieduerr98'>
+                <a className={'with-icon'} href='https://twitter.com/natalieduerr98'>
                   <TwitterIcon />
                   <span> Find me on Twitter</span>
-                </Link>
+                </a>
               </Grid>
               <Grid item>
-                <Link className={'with-icon'} to='https://www.linkedin.com/in/natalieduerr/'>
+                <a className={'with-icon'} href='https://www.linkedin.com/in/natalieduerr/'>
                   <LinkedInIcon />
                   <span> Connect on LinkedIn</span>
-                </Link>
+                </a>
               </Grid>
             </Grid>
           </Grid>

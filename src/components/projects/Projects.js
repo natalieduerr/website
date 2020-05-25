@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
       <div className={'page'}>
         <Grid container direction={'column'}>
           <Header activeTab={'projects'}></Header>
-          <main role='main'>
+          <main className="all-projects" role='main'>
             <Container className='projects'>
               <h1>Projects</h1>
               <Grid container>

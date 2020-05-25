@@ -64,7 +64,7 @@ export default class About extends React.Component {
                     accessible to all. When I'm not designing or developing, you can find me reading a good book{' '}
                     <s>in Boston Commons</s>, watching (and sometimes re-watching) films{' '}
                     <s>at the Coolidge or Brattle</s>, playing Animal Crossing, or hanging with friends (via the
-                    internet right now!). Also, catch me always wearing my trusty Dr. Marten sneakers!
+                    internet right now!). 
                   </p>
                   <a href={Resume} rel='noopener noreferrer' target='_blank'>
                     <Button className='primary' variant='contained' color='primary'>
