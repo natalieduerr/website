@@ -13,7 +13,6 @@ import Header from '../../components/navigation/Header';
 import './home.scss';
 
 import Sprinkle from '../../components/sprinkle/Sprinkle';
-
 import BuildWave from '../../components/wave/BuildWave';
 
 export default class Home extends React.Component {
@@ -24,6 +23,7 @@ export default class Home extends React.Component {
       x: window.innerWidth / 2,
       y: window.innerHeight / 2,
       sprinkleList: [],
+      rotate: 0,
     };
     this.onMouseMove = this.onMouseMove.bind(this);
     this.addSprinkle = this.addSprinkle.bind(this);
@@ -46,7 +46,7 @@ export default class Home extends React.Component {
     var currentX = this.state.x;
     var currentY = this.state.y;
 
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' && this.state.game) {
       this.addSprinkle();
     } else if (event.key === 'ArrowLeft') {
       this.setState({ x: (currentX -= 48) });
@@ -61,8 +61,10 @@ export default class Home extends React.Component {
 
   addSprinkle(e) {
     this.setState({
-      sprinkleList: [...this.state.sprinkleList, { x: this.state.x, y: this.state.y }],
+      sprinkleList: [...this.state.sprinkleList, { x: this.state.x, y: this.state.y, rotate: this.state.rotate }],
+      rotate: 360 * Math.random(),
     });
+    console.log(this.state.rotate)
   }
 
   render() {
@@ -72,12 +74,11 @@ export default class Home extends React.Component {
           <div
             id={'first-circle'}
             className={this.state.game ? null : 'hide'}
-            style={{ top: this.state.y, left: this.state.x }}
-            onKeyPress={this.handleKeyPress}
+            style={{ top: this.state.y, left: this.state.x, transform: 'rotate(' + this.state.rotate + 'deg)' }}
             tabIndex={0}
           ></div>
           {this.state.sprinkleList.map((sprinkle, i) => {
-            return <Sprinkle key={i} x={sprinkle.x} y={sprinkle.y} />;
+            return <Sprinkle key={i} x={sprinkle.x} y={sprinkle.y} rotate={sprinkle.rotate} />;
           })}
         </div>
         <Grid container className={this.state.game ? 'home hide' : 'home'}>
@@ -117,6 +118,7 @@ export default class Home extends React.Component {
           <Grid item xs={6}>
             <p className='h5'>
               Move the sprinkles with your mouse (or keyboard) and click (or press enter) to add them to the background!
+              If using the keyboard, make sure you are focusing on the sprinkle.
             </p>
           </Grid>
         </Grid>

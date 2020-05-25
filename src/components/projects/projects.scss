@@ -3,6 +3,10 @@
 @import '../../assets/styles/mixins';
 
 
+main.all-projects {
+  display: contents;
+}
+
 .projects {
   @media (min-width: $min-md) {
     padding: 2.5rem 0;
