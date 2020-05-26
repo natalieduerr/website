@@ -352,7 +352,6 @@ header a.active {
   transition: 0.4s;
   width: 100%;
 }
-.about .image:hover .caption,
 .about .image:hover img {
   opacity: 40%;
 }
