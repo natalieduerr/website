@@ -355,6 +355,9 @@ header a.active {
 .about .image:hover img {
   opacity: 40%;
 }
+.about .image:hover .caption {
+  opacity: 100%;
+}
 .about .wave-container {
   margin-top: 1rem;
 }
