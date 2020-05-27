@@ -200,6 +200,7 @@ header a.active {
     visibility: visible;
     position: fixed;
     bottom: 2rem;
+    z-index: 1;
   }
   .play button {
     background-color: #e9ffad;
