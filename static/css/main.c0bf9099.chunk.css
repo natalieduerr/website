@@ -114,9 +114,6 @@ header a.active {
 .sprinkle.hide {
   display: none;
 }
-.home {
-  z-index: 2;
-}
 @media (min-width: 960px) {
   .home {
     padding-top: 2.5rem;
