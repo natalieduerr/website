@@ -30,6 +30,7 @@ export default class Film extends React.Component {
                 <Grid container justify={'center'}>
                   <ProjectHeader
                     title={'A Year in Film'}
+                    desc={'Understanding the diversity of my own film watching habits'}
                     category={['Typography', 'Info Design']}
                     role={null}
                     date={'March - April 2020'}
@@ -61,9 +62,9 @@ export default class Film extends React.Component {
                     <p>
                       As someone who advocates for greater inclusion in the film industry I was interested to see who
                       makes the films I watch and enjoy the most. My first project highlighted the lack of diversity of
-                      the directors who have won Best Picture at the Oscar's (hint: it's been a white man 86 times out
-                      of 92 years), so it was a great way to tie together the concept of what critics and Hollywood deem
-                      to be the best versus what a consumer spends time and money to watch.
+                      the directors who have won Best Picture at the Oscar's (hint: it's been a white man 86 times in
+                      the Oscar's 92 ceremonies), so it was a great way to tie together the concept of what critics and
+                      Hollywood deem to be the best versus what a consumer spends time and money to watch.
                     </p>
                     <p>
                       Initially, my project started as more of a visualization of where I watched films and who was in
@@ -97,7 +98,7 @@ export default class Film extends React.Component {
                   },
                 ]}
                 caption={
-                  "These are three iterations of my concept. In my first iteration I placed the focus on geography, but found that that data didn't lead to any interesting conclusions. Once I shifted to the diversity of the directors I watched, I was able to draw a meaningful conclusions that my viewing habits are relaively diverse, but that I could always do better."
+                  "These are three iterations of my concept. In my first iteration I placed the focus on geography, but found that that data didn't lead to any interesting conclusions. Once I shifted to the diversity of the directors I watched, I was able to draw a meaningful conclusions that my viewing habits are relatively diverse, but that I could always do better."
                 }
               ></ImageBlock>
               <Container>
@@ -114,7 +115,7 @@ export default class Film extends React.Component {
                     </p>
                     <p>
                       As I mentioned earlier, I am currently developing this project further and translating this to an
-                      interactive, digital experience.
+                      interactive, digital experience where users will be able to understand their own data.
                     </p>
                   </Grid>
                 </Grid>

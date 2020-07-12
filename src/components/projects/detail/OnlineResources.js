@@ -27,6 +27,7 @@ export default class Projects extends React.Component {
                 <Grid container justify={'center'}>
                   <ProjectHeader
                     title={'Online Resources'}
+                    desc={'Creating a resource platform for prospective students and other users'}
                     category={['UX Design', 'Visual Design']}
                     role={'Junior Designer at OHO Interactive'}
                     date={'Aug 2018 - Nov 2018'}

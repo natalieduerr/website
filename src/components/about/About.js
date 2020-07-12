@@ -95,6 +95,19 @@ export default class About extends React.Component {
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <h2 className='h4'>Experience</h2>
+                  <a href='https://www.drift.com/' rel='noopener noreferrer' target='_blank'>
+                    <h3 className='h5'>Drift</h3>
+                    <LaunchIcon />
+                  </a>
+                  <span>
+                    <strong>Product Design co-op</strong>
+                  </span>
+                  <br />
+                  <span>July 2020 - Present</span>
+                  <br />
+                  <span>Boston, MA</span>
+                  <br />
+                  <br />
                   <a href='https://www.bevspot.com/' rel='noopener noreferrer' target='_blank'>
                     <h3 className='h5'>BevSpot</h3>
                     <LaunchIcon />
@@ -132,19 +145,6 @@ export default class About extends React.Component {
                   <span>July 2018 - December 2018</span>
                   <br />
                   <span>Somerville, MA</span>
-                  <br />
-                  <br />
-                  <a href='https://www.tastemakersmag.com/' rel='noopener noreferrer' target='_blank'>
-                    <h3 className='h5'>Tastemakers</h3>
-                    <LaunchIcon />
-                  </a>
-                  <span>
-                    <strong>Designer</strong>
-                  </span>
-                  <br />
-                  <span>January 2017 - January 2019</span>
-                  <br />
-                  <span>Boston, MA</span>
                   <br />
                 </Grid>
                 <Grid item xs={12} md={4}>

@@ -93,7 +93,7 @@ export default class Home extends React.Component {
             <BuildWave></BuildWave>
             <Grid item xs={12}>
               <h2>
-                I’m a designer and front-end developer located in Boston, MA. I strive to create enchanting and
+                I’m a designer and front-end developer located in Boston, MA. I strive to create delightful and
                 accessible experiences across platforms.
               </h2>
             </Grid>
@@ -122,12 +122,12 @@ export default class Home extends React.Component {
             </p>
           </Grid>
         </Grid>
-        <Grid className={this.state.game ? 'play stay-open' : 'play'} container xs={12} item justify={'flex-end'}>
+        <div className={this.state.game ? 'play stay-open' : 'play'}>
           <Button onClick={this.playGame}>
             <PlayArrowIcon />
             <span>{this.state.game ? 'Close Game' : 'Play a Game'}</span>
           </Button>
-        </Grid>
+        </div>
       </main>
     );
   }

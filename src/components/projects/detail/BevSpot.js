@@ -28,6 +28,7 @@ export default class BevSpot extends React.Component {
                 <Grid container justify={'center'}>
                   <ProjectHeader
                     title={'Ordering on BevSpot'}
+                    desc={'Rethinking an established experience, now with customers at the center'}
                     category={['Research', 'UX Design', 'Visual Design']}
                     role={'Junior Designer at BevSpot'}
                     date={'Sept 2019 - Jan 2020'}
@@ -164,7 +165,7 @@ export default class BevSpot extends React.Component {
                   },
                 ]}
                 caption={
-                  'After several rounds of user testing this is where I landed. I was able to simplify the initial wireframes and effectively apply our new brand. At this point, the teams focus shifted to a new mobile app, at which point efforts for updating Cart Builder were paused.'
+                  "After several rounds of user testing this is where I landed. I was able to simplify the initial wireframes and effectively apply our new brand. At this point, the team's focus shifted to a new mobile app, at which point efforts for updating Cart Builder were paused."
                 }
                 link={null}
                 linkText={null}

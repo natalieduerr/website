@@ -9,6 +9,7 @@ export default class ProjectHeader extends React.Component {
         <section className='project-header'>
           <Grid item xs={12}>
             <h1>{this.props.title}</h1>
+            <h2 className='desc'>{this.props.desc}</h2>
           </Grid>
           <Grid item container direction={'row'} xs={12}>
             <Grid item xs={6} md={3}>

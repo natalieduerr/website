@@ -28,6 +28,7 @@ export default class Projects extends React.Component {
                 <Grid container justify={'center'}>
                   <ProjectHeader
                     title={'Contuity'}
+                    desc={'Defining an intuitive experience that allows users to mindfully manage their connections'}
                     category={['Research', 'UX Design', 'Front-end Development']}
                     role={'Designer at Scout Studio'}
                     date={'Jan 2019 - April 2019'}

@@ -27,6 +27,7 @@ export default class DPT extends React.Component {
                 <Grid container justify={'center'}>
                   <ProjectHeader
                     title={'Drink Price Tool Landing Page'}
+                    desc={'Promoting a new tool to exisiting and future customers'}
                     category={['Web Design', 'Development']}
                     role={'Junior Designer at BevSpot'}
                     date={'July 2019 - Aug 2019'}
