@@ -55,17 +55,17 @@
     position: relative;
 
     & img {
-      opacity: 100%;
-      transition: 0.4s;
+      opacity: 1;
+      transition: opacity 0.4s;
       width: 100%;
     }
 
     &:hover {
       & img {
-        opacity: 40%;
+        opacity: 0.4;
       }
       & .caption {
-        opacity: 100%;
+        opacity: 1;
       }
     }
   }
