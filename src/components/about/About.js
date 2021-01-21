@@ -66,6 +66,7 @@ export default class About extends React.Component {
                     <s>at the Coolidge or Brattle</s>, playing Animal Crossing, or hanging with friends (via the
                     internet right now!). 
                   </p>
+                  <p>I also write about film for <a className='hunt' href='https://huntnewsnu.com/staff_profile/natalie-duerr/' rel='noopener noreferrer' target='_blank'>the Huntington News</a>!</p>
                   <a href={Resume} rel='noopener noreferrer' target='_blank'>
                     <Button className='primary' variant='contained' color='primary'>
                       View my Résumé
@@ -93,7 +94,7 @@ export default class About extends React.Component {
                     II, Database Design
                   </p>
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item className='exp' xs={12} md={4}>
                   <h2 className='h4'>Experience</h2>
                   <a href='https://www.drift.com/' rel='noopener noreferrer' target='_blank'>
                     <h3 className='h5'>Drift</h3>
@@ -103,7 +104,7 @@ export default class About extends React.Component {
                     <strong>Product Design co-op</strong>
                   </span>
                   <br />
-                  <span>July 2020 - Present</span>
+                  <span>July 2020 – December 2020</span>
                   <br />
                   <span>Boston, MA</span>
                   <br />
@@ -116,7 +117,7 @@ export default class About extends React.Component {
                     <strong>Junior Designer</strong>
                   </span>
                   <br />
-                  <span>July 2019 - April 2020</span>
+                  <span>July 2019 – April 2020</span>
                   <br />
                   <span>Boston, MA</span>
                   <br />
@@ -129,7 +130,7 @@ export default class About extends React.Component {
                     <strong>Designer + Front-end Developer</strong>
                   </span>
                   <br />
-                  <span>Sept 2017 - April 2019</span>
+                  <span>September 2017 – April 2019</span>
                   <br />
                   <span>Boston, MA</span>
                   <br />
@@ -142,18 +143,18 @@ export default class About extends React.Component {
                     <strong>Junior Designer</strong>
                   </span>
                   <br />
-                  <span>July 2018 - December 2018</span>
+                  <span>July 2018 – December 2018</span>
                   <br />
                   <span>Somerville, MA</span>
                   <br />
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <h2 className='h4'>Skills</h2>
-                  <span>Sketch + InVision</span>
-                  <br />
-                  <span>Adobe Creative Suite</span>
-                  <br />
                   <span>Figma</span>
+                  <br />
+                  <span>Adobe Creative Cloud</span>
+                  <br />
+                  <span>Sketch + InVision</span>
                   <br />
                   <span>HTML + CSS</span>
                   <br />

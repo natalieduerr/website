@@ -23,19 +23,25 @@
     }
   }
 
-  & a {
-    display: flex;
-    align-items: center;
-    width: fit-content;
+  a.hunt:hover {
+    text-decoration: underline;
+  }
 
-    & .h5 {
-      @include underline($pink);
-    }
+  & .exp {
+    & a {
+      display: flex;
+      align-items: center;
+      width: fit-content;
 
-    & .MuiSvgIcon-root {
-      color: $pink;
-      fill: $pink;
-      padding-left: 0.5rem;
+      & .h5 {
+        @include underline($pink);
+      }
+
+      & .MuiSvgIcon-root {
+        color: $pink;
+        fill: $pink;
+        padding-left: 0.5rem;
+      }
     }
   }
 
