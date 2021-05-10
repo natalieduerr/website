@@ -56,17 +56,14 @@ export default class About extends React.Component {
                   </Grid>
                 </Grid>
                 <Grid item xs={12} sm={6} md={5}>
-                  <p>
+                  <p className='me'>
                     I first became interested in design while working on my high school's yearbook. With very few art
-                    classes offered, I started out as a self-taught designer. I am now pursuing a BFA in Design, with a
+                    classes offered, I started out as a self-taught designer. I completed my BFA in Design, with a
                     concentration in Interaction Design, at Northeastern University, as well as minors in Computer
                     Science and Art History. My goal is to create meaningful interactions and experiences that are
-                    accessible to all. When I'm not designing or developing, you can find me reading a good book{' '}
-                    <s>in Boston Commons</s>, watching (and sometimes re-watching) films{' '}
-                    <s>at the Coolidge or Brattle</s>, playing Animal Crossing, or hanging with friends (via the
-                    internet right now!). 
+                    accessible to all. When I'm not designing or developing, you can find me reading a good book,
+                    watching (and sometimes re-watching) films at the local cinema, drinking a matcha latte, or roller skating around town!
                   </p>
-                  <p>I also write about film for <a className='hunt' href='https://huntnewsnu.com/staff_profile/natalie-duerr/' rel='noopener noreferrer' target='_blank'>the Huntington News</a>!</p>
                   <a href={Resume} rel='noopener noreferrer' target='_blank'>
                     <Button className='primary' variant='contained' color='primary'>
                       View my Résumé
@@ -81,13 +78,11 @@ export default class About extends React.Component {
                 <Grid item xs={12} md={4}>
                   <h2 className='h4'>Education</h2>
                   <h3 className='h5'>Northeastern University</h3>
-                  <span>
-                    <strong>BFA in Design</strong>
-                  </span>
+                  <span className='role'>BFA in Design</span>
                   <br />
                   <span>Minors in Computer Science and Art History</span>
                   <br />
-                  <span>Expected 2021</span> <br />
+                  <span>Completed May 2021</span> <br />
                   <p>
                     <strong>Relevant Courses:</strong> Interaction Design I & II, Programming Basics, Typography I & II,
                     Graphic Design I & II, Information Design, Physical Computing, Fundamentals of Computer Science I &
@@ -96,79 +91,60 @@ export default class About extends React.Component {
                 </Grid>
                 <Grid item className='exp' xs={12} md={4}>
                   <h2 className='h4'>Experience</h2>
-                  <a href='https://www.drift.com/' rel='noopener noreferrer' target='_blank'>
-                    <h3 className='h5'>Drift</h3>
-                    <LaunchIcon />
-                  </a>
-                  <span>
-                    <strong>Product Design co-op</strong>
-                  </span>
-                  <br />
-                  <span>July 2020 – December 2020</span>
-                  <br />
-                  <span>Boston, MA</span>
-                  <br />
-                  <br />
-                  <a href='https://www.bevspot.com/' rel='noopener noreferrer' target='_blank'>
-                    <h3 className='h5'>BevSpot</h3>
-                    <LaunchIcon />
-                  </a>
-                  <span>
-                    <strong>Junior Designer</strong>
-                  </span>
-                  <br />
-                  <span>July 2019 – April 2020</span>
-                  <br />
-                  <span>Boston, MA</span>
-                  <br />
-                  <br />
-                  <a href='https://web.northeastern.edu/scout/' rel='noopener noreferrer' target='_blank'>
-                    <h3 className='h5'>Scout Studio</h3>
-                    <LaunchIcon />
-                  </a>
-                  <span>
-                    <strong>Designer + Front-end Developer</strong>
-                  </span>
-                  <br />
-                  <span>September 2017 – April 2019</span>
-                  <br />
-                  <span>Boston, MA</span>
-                  <br />
-                  <br />
-                  <a href='https://www.oho.com/' rel='noopener noreferrer' target='_blank'>
-                    <h3 className='h5'>OHO Interactive</h3>
-                    <LaunchIcon />
-                  </a>
-                  <span>
-                    <strong>Junior Designer</strong>
-                  </span>
-                  <br />
-                  <span>July 2018 – December 2018</span>
-                  <br />
-                  <span>Somerville, MA</span>
-                  <br />
+                  <ol>
+                    <li>
+                      <a href='https://www.drift.com/' rel='noopener noreferrer' target='_blank'>
+                        <h3 className='h5'>Drift</h3>
+                        <LaunchIcon />
+                      </a>
+                      <span className='role'>Associate Product Designer</span>
+                      <span className='time'>June 2021</span>
+                      <span className='role'>Product Design co-op</span>
+                      <span className='time'>July 2020 – December 2020</span>
+                    </li>
+                    <li>
+                      <a href='https://www.bevspot.com/' rel='noopener noreferrer' target='_blank'>
+                        <h3 className='h5'>BevSpot</h3>
+                        <LaunchIcon />
+                      </a>
+                      <span className='role'>Junior Designer</span>
+                      <span className='time'>July 2019 – April 2020</span>
+                      <span>Boston, MA</span>
+                    </li>
+                    <li>
+                      <a href='https://web.northeastern.edu/scout/' rel='noopener noreferrer' target='_blank'>
+                        <h3 className='h5'>Scout Studio</h3>
+                        <LaunchIcon />
+                      </a>
+                      <span className='role'> Designer + Front-end Developer</span>
+                      <span className='time'>September 2017 – April 2019</span>
+                      <span>Boston, MA</span>
+                    </li>
+                    <li>
+                      <a href='https://www.oho.com/' rel='noopener noreferrer' target='_blank'>
+                        <h3 className='h5'>OHO Interactive</h3>
+                        <LaunchIcon />
+                      </a>
+                      <span className='role'>Junior Designer</span>
+                      <span className='time'>July 2018 – December 2018</span>
+                      <span>Somerville, MA</span>
+                    </li>
+                  </ol>
                 </Grid>
                 <Grid item xs={12} md={4}>
                   <h2 className='h4'>Skills</h2>
-                  <span>Figma</span>
-                  <br />
-                  <span>Adobe Creative Cloud</span>
-                  <br />
-                  <span>Sketch + InVision</span>
-                  <br />
-                  <span>HTML + CSS</span>
-                  <br />
-                  <span>Sass/SCSS</span>
-                  <br />
-                  <span>React</span>
-                  <br />
-                  <span>jQuery</span>
-                  <br />
-                  <span>Javascript</span>
-                  <br />
-                  <span>SQL</span>
-                  <br />
-                  <span>Arduino</span>
+                  <ul>
+                    <li>Figma</li>
+                    <li>Adobe Creative Cloud</li>
+                    <li>Sketch + InVision</li>
+                    <li>HTML + CSS</li>
+                    <li>Sass/SCSS</li>
+                    <li>React</li>
+                    <li>jQuery + Javascript</li>
+                    <li>SQL</li>
+                    <li>C++</li>
+                    <li>Arduino</li>
+                  </ul>
                 </Grid>
               </Grid>
             </Container>

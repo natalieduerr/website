@@ -93,7 +93,7 @@ export default class Home extends React.Component {
             <BuildWave></BuildWave>
             <Grid item xs={12}>
               <h2>
-                I’m a designer and front-end developer located in Boston, MA. I strive to create delightful and
+                I’m a designer and front-end developer located in New York, NY. I strive to create delightful and
                 accessible experiences across platforms.
               </h2>
             </Grid>
