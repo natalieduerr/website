@@ -36,6 +36,14 @@ export default class Navigation extends React.Component {
                   </Link>
                 </Grid>
                 <Grid item>
+                  <Link to='/writing' className={this.props.activeTab === 'writing' ? 'active' : null}>
+                    Writing
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <span>|</span>
+                </Grid>
+                <Grid item>
                   <Link to='/about' className={this.props.activeTab === 'about' ? 'active' : null}>
                     About
                   </Link>
@@ -69,6 +77,11 @@ export default class Navigation extends React.Component {
               <Grid item>
                 <Link to='/projects' className={this.props.activeTab === 'projects' ? 'active' : null}>
                   Projects
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link to='/writing' className={this.props.activeTab === 'writing' ? 'active' : null}>
+                  Writing
                 </Link>
               </Grid>
               <Grid item>

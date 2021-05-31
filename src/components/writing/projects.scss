@@ -1,0 +1,37 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/breakpoints';
+@import '../../assets/styles/mixins';
+
+main.all-projects {
+  display: contents;
+}
+
+.writing {
+  @media (min-width: $min-md) {
+    padding: 5.75rem 0;
+  }
+
+  & h1 {
+    @include hidden();
+  }
+
+  & a {
+    & .h3,
+    & .h6 {
+      font-style: normal;
+    }
+  }
+
+  & a .h3 {
+    text-decoration: underline;
+  }
+
+  & .h6 {
+    color: $pink;
+    width: 100%;
+  }
+
+  & .project-card {
+    margin-bottom: 1.5rem;
+  }
+}
