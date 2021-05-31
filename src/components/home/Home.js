@@ -64,7 +64,7 @@ export default class Home extends React.Component {
       sprinkleList: [...this.state.sprinkleList, { x: this.state.x, y: this.state.y, rotate: this.state.rotate }],
       rotate: 360 * Math.random(),
     });
-    console.log(this.state.rotate)
+    console.log(this.state.rotate);
   }
 
   render() {
@@ -85,17 +85,17 @@ export default class Home extends React.Component {
           <Header activeTab={'home'}></Header>
           <Container className={'home-content'}>
             <Grid item xs={12}>
-              <h6>Hi, my name is</h6>
+              <h1 className='h6'>Hi, my name is</h1>
             </Grid>
             <Grid item xs={12}>
-              <h1>Natalie Duerr</h1>
+              <h2 className='h1'>Natalie Duerr</h2>
             </Grid>
             <BuildWave></BuildWave>
             <Grid item xs={12}>
-              <h2>
+              <h3 className='h2'>
                 I’m a designer and front-end developer located in New York, NY. I strive to create delightful and
                 accessible experiences across platforms.
-              </h2>
+              </h3>
             </Grid>
             <Box display={{ xs: 'none', md: 'unset' }}>
               <Grid className={'links'} container item xs={12}>
