@@ -27,17 +27,17 @@ export default class About extends React.Component {
               <h1>About Me</h1>
               <Grid container direction={'row'} spacing={3} justify={'center'}>
                 <Grid className='image' item xs={12} sm={6} md={4}>
-                  <img src={require('../../assets/imgs/about/toronto.JPG')} alt='Natalie in Toronto.' />
+                  <img src={require('../../assets/imgs/about/grad.jpg')} alt='Natalie wears a square neck floral dress while resting her arms on the ramp railings. She is smiling while looking off to the right.' />
                   <div className='caption'>
-                    <p>Toronto, ON</p>
-                    <p>September 2019</p>
+                    <p>Boston, MA</p>
+                    <p>April 2021</p>
                   </div>
                 </Grid>
                 <Grid className='extra-photos' container spacing={2} direction={'column'} item md={3}>
                   <Grid item className='image'>
                     <img
                       src={require('../../assets/imgs/about/seattle.jpeg')}
-                      alt='Natalie at the Chihuly Museum in Seattle.'
+                      alt='Natalie at the Chihuly Museum in Seattle. She stands underneath a ceiling sculpture made of red, yellow, and orange glass flowers.'
                     />
                     <div className='caption'>
                       <p>Seattle, WA</p>
@@ -47,7 +47,7 @@ export default class About extends React.Component {
                   <Grid item className='image'>
                     <img
                       src={require('../../assets/imgs/about/coolidge.jpg')}
-                      alt='Natalie at a Q+A screening of Portrait of a Lady on fire at Coolidge Corner theatre in Boston.'
+                      alt='Natalie stands in front of a Portrait of Lady on Fire poster at the Coolidge Corner Theatre.'
                     />
                     <div className='caption'>
                       <p>Brookline, MA</p>
@@ -98,7 +98,7 @@ export default class About extends React.Component {
                         <LaunchIcon />
                       </a>
                       <span className='role'>Associate Product Designer</span>
-                      <span className='time'>June 2021</span>
+                      <span className='time'>June 2021 – Present</span>
                       <span className='role'>Product Design co-op</span>
                       <span className='time'>July 2020 – December 2020</span>
                     </li>

@@ -2,7 +2,6 @@
 @import '../../assets/styles/breakpoints';
 @import '../../assets/styles/mixins';
 
-
 main.all-projects {
   display: contents;
 }
@@ -14,6 +13,12 @@ main.all-projects {
 
   & h1 {
     @include hidden();
+  }
+  & .h3 {
+    @media (min-width: $min-md) {
+      border-bottom: 2px solid $green;
+      text-decoration: none;
+    }
   }
 
   & a {

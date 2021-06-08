@@ -5,9 +5,18 @@ header {
   height: 2rem;
   padding: 1.5rem 1rem;
 
+  .name-home  {
+    width: fit-content;
+  }
+
   & a,
-  & a span {
+  & a span,
+  & span {
     font-size: 1.5rem;
+  }
+
+  span {
+    padding: 0 0.5rem;
   }
 
   a {
@@ -38,7 +47,7 @@ header {
   top: -100vh;
   width: 100vw;
   height: 100vh;
-  background-color: $black60;
+  background-color: $black80;
   display: none;
   position: absolute;
   transition: 0.2s ease-in-out;
@@ -49,7 +58,7 @@ header {
   }
 
   & a {
-    font-size: 3rem;
+    font-size: 1.75rem;
     @include underline($green);
   }
 }

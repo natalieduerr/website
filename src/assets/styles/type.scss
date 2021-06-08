@@ -130,16 +130,6 @@ a {
     color: $green;
     font-style: italic;
   }
-
-  h3,
-  .h3 {
-    text-decoration: underline;
-
-    @media (min-width: $min-md) {
-      border-bottom: 2px solid $green;
-      text-decoration: none;
-    }
-  }
 }
 
 p.caption {
