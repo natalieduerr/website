@@ -22,7 +22,7 @@ export default class Navigation extends React.Component {
         {this.props.activeTab === 'home' ? null : (
           <Box display={{ xs: 'none', md: 'block' }}>
             <Grid container>
-              <Grid container item xs justify='flex-start'>
+              <Grid container item xs md='auto' justify='flex-start' className='name-home'>
                 <Grid item>
                   <Link to='/' className='name'>
                     <span>natalie duerr.</span>
@@ -33,6 +33,11 @@ export default class Navigation extends React.Component {
                 <Grid item>
                   <Link to='/projects' className={this.props.activeTab === 'projects' ? 'active' : null}>
                     Projects
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link to='/photo' className={this.props.activeTab === 'photo' ? 'active' : null}>
+                    Photo
                   </Link>
                 </Grid>
                 <Grid item>
@@ -77,6 +82,11 @@ export default class Navigation extends React.Component {
               <Grid item>
                 <Link to='/projects' className={this.props.activeTab === 'projects' ? 'active' : null}>
                   Projects
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link to='/photo' className={this.props.activeTab === 'photo' ? 'active' : null}>
+                  Photo
                 </Link>
               </Grid>
               <Grid item>

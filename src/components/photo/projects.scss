@@ -1,0 +1,46 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/breakpoints';
+@import '../../assets/styles/mixins';
+
+main.all-projects {
+  display: contents;
+}
+
+#SRLLightbox {
+  z-index: 99999999999;
+}
+
+.photo {
+  @media (min-width: $min-md) {
+    padding: 5.75rem 0;
+  }
+
+  & h1 {
+    @include hidden();
+  }
+
+  .photo-wrap {
+    > div > div {
+      display: inline-block;
+    }
+    img {
+      width: calc(100% - 0.5rem);
+      padding-bottom: 0.25rem;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+
+  // & .photo-flow {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   flex-direction: row;
+    
+  //   img {
+  //     // width: calc((100%/3) - .5rem);
+  //     // margin-bottom: 1rem;
+  //   }
+  // }
+}

@@ -17,7 +17,7 @@ import DPT from './components/projects/detail/DPT';
 import OnlineResources from './components/projects/detail/OnlineResources';
 import NoMatch from './components/home/404';
 import Writing from './components/writing/Writing';
-
+import Photo from './components/photo/Photo';
 
 
 const Routes = (props) => {
@@ -33,6 +33,7 @@ const Routes = (props) => {
                   <Route exact path='/' render={() => <Home />} />
                   <Route exact path='/about' render={() => <About />} />
                   <Route exact path='/projects' render={() => <Projects />} />
+                  <Route exact path='/photo' render={() => <Photo />} />
                   <Route exact path='/writing' render={() => <Writing />} />
                   <Route exact path='/projects/mass-hike' render={() => <MassHike />} />
                   <Route exact path='/projects/contuity' render={() => <Contuity />} />

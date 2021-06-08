@@ -20,7 +20,7 @@ export default class Writing extends React.Component {
           <Header activeTab={'writing'} />
           <main className="all-projects" role='main'>
             <Container className='writing'>
-              <h1>Projects</h1>
+              <h1>Writing samples</h1>
               <Grid container>
                 <Grid item xs={12}>
                   <ProjectCard
@@ -41,7 +41,7 @@ export default class Writing extends React.Component {
                   <ProjectCard
                     name={'The Visitors — COVID-19 transforms an art exhibit into a healing experience'}
                     type={'Review'}
-                    link={'film'}
+                    link={'https://natalieduerr.medium.com/the-visitors-covid-19-transforms-an-art-exhibit-into-a-healing-experience-895fbf065a7d'}
                   />
                   <ProjectCard
                     name={'Filmify’s Brand Design'}
