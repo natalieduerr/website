@@ -54,7 +54,11 @@
 
   & a {
     font-size: 3rem;
-    @include underline($green);
+    @include underline($green); 
+  }
+
+  & .menu a {
+    font-size: 1.75rem;
   }
 
   & .home-content {
