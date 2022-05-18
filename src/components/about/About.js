@@ -26,45 +26,63 @@ export default class About extends React.Component {
             <Container className='about'>
               <h1>About Me</h1>
               <Grid container direction={'row'} spacing={3} justify={'center'}>
-                <Grid className='image' item xs={12} sm={6} md={4}>
-                  <img src={require('../../assets/imgs/about/grad.jpg')} alt='Natalie wears a square neck floral dress while resting her arms on the ramp railings. She is smiling while looking off to the right.' />
-                  <div className='caption'>
-                    <p>Boston, MA</p>
-                    <p>April 2021</p>
-                  </div>
+                <Grid className='extra-photos' container spacing={2} direction={'column'} item md={4}>
+                  <Grid item className='image'>
+                    <img
+                      src={require('../../assets/imgs/about/cow.jpg')}
+                      alt='Natalie poses next to a cow with brown spots at a local farm.'
+                    />
+                    <div className='caption'>
+                      <p>Wycoff, NJ</p>
+                      <p>October 2021</p>
+                    </div>
+                  </Grid>
+                  <Grid item className='image'>
+                    <img
+                      src={require('../../assets/imgs/about/cat.jpg')}
+                      alt='Natalie takes a selfie with her calico cat sitting on her lap while she is working in her home office.'
+                    />
+                    <div className='caption'>
+                      <p>Home</p>
+                      <p>January 2022</p>
+                    </div>
+                  </Grid>
                 </Grid>
-                <Grid className='extra-photos' container spacing={2} direction={'column'} item md={3}>
-                  <Grid item className='image'>
-                    <img
-                      src={require('../../assets/imgs/about/seattle.jpeg')}
-                      alt='Natalie at the Chihuly Museum in Seattle. She stands underneath a ceiling sculpture made of red, yellow, and orange glass flowers.'
-                    />
-                    <div className='caption'>
-                      <p>Seattle, WA</p>
-                      <p>March 2020</p>
-                    </div>
-                  </Grid>
-                  <Grid item className='image'>
-                    <img
-                      src={require('../../assets/imgs/about/coolidge.jpg')}
-                      alt='Natalie stands in front of a Portrait of Lady on Fire poster at the Coolidge Corner Theatre.'
-                    />
-                    <div className='caption'>
-                      <p>Brookline, MA</p>
-                      <p>February 2020</p>
-                    </div>
-                  </Grid>
+                <Grid className='image' item xs={12} sm={6} md={3}>
+                  <img
+                    src={require('../../assets/imgs/about/sanfran.jpg')}
+                    alt='Natalie poses in a mask in the One-Way Color Tunnel at SFMOMA. She wears a pink and orange plaid dress and is surrounded by colorful tiles that reflect onto her.'
+                  />
+                  <div className='caption'>
+                    <p>San Francisoc, CA</p>
+                    <p>March 2022</p>
+                  </div>
                 </Grid>
                 <Grid item xs={12} sm={6} md={5}>
                   <p className='me'>
                     I first became interested in design while working on my high school's yearbook. With very few art
-                    classes offered, I started out as a self-taught designer. I completed my BFA in Design, with a
-                    concentration in Interaction Design, at Northeastern University, as well as minors in Computer
-                    Science and Art History. My goal is to create meaningful interactions and experiences that are
-                    accessible to all. When I'm not designing or developing, you can find me reading a good book,
-                    watching (and sometimes re-watching) films at the local cinema, drinking a matcha latte, or roller skating around town!
+                    classes offered, I started out as a self-taught designer. I graduated with a BFA in Design
+                    (concentration in Interaction Design) from Northeastern University. My goal is to create meaningful
+                    interactions and experiences accessible to all.
                   </p>
-                  <a href={Resume} rel='noopener noreferrer' target='_blank'>
+                  <p className='me'>
+                    When I'm not designing, I write about film, television, and art for{' '}
+                    <a href='https://readcopy.co/writings' rel='noopener noreferrer' target='_blank'>
+                      COPY
+                    </a>{' '}
+                    (currently) and{' '}
+                    <a
+                      href='https://huntnewsnu.com/staff_name/natalie-duerr/'
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Huntington News
+                    </a>{' '}
+                    (previously). If I'm not at my computer, you can catch me rollerskating at my local rink, watching
+                    (and sometimes rewatching) films at the theatre, knitting with my cat, or sipping on an iced matcha
+                    latte at a nearby cafe.
+                  </p>
+                  <a className="button" href={Resume} rel='noopener noreferrer' target='_blank'>
                     <Button className='primary' variant='contained' color='primary'>
                       View my Résumé
                     </Button>
@@ -74,15 +92,13 @@ export default class About extends React.Component {
               <Grid container justify='center'>
                 <BuildWave></BuildWave>
               </Grid>
-              <Grid container spacing={3}>
+              <Grid container spacing={3} className='details'>
                 <Grid item xs={12} md={4}>
                   <h2 className='h4'>Education</h2>
                   <h3 className='h5'>Northeastern University</h3>
                   <span className='role'>BFA in Design</span>
-                  <br />
                   <span>Minors in Computer Science and Art History</span>
-                  <br />
-                  <span>Completed May 2021</span> <br />
+                  <span>Completed May 2021</span> 
                   <p>
                     <strong>Relevant Courses:</strong> Interaction Design I & II, Programming Basics, Typography I & II,
                     Graphic Design I & II, Information Design, Physical Computing, Fundamentals of Computer Science I &
@@ -97,8 +113,10 @@ export default class About extends React.Component {
                         <h3 className='h5'>Drift</h3>
                         <LaunchIcon />
                       </a>
+                      <span className='role'>Product Designer</span>
+                      <span className='time'>March 2022 – Present</span>
                       <span className='role'>Associate Product Designer</span>
-                      <span className='time'>June 2021 – Present</span>
+                      <span className='time'>June 2021 – February 2022</span>
                       <span className='role'>Product Design co-op</span>
                       <span className='time'>July 2020 – December 2020</span>
                     </li>
@@ -120,15 +138,6 @@ export default class About extends React.Component {
                       <span className='time'>September 2017 – April 2019</span>
                       <span>Boston, MA</span>
                     </li>
-                    <li>
-                      <a href='https://www.oho.com/' rel='noopener noreferrer' target='_blank'>
-                        <h3 className='h5'>OHO Interactive</h3>
-                        <LaunchIcon />
-                      </a>
-                      <span className='role'>Junior Designer</span>
-                      <span className='time'>July 2018 – December 2018</span>
-                      <span>Somerville, MA</span>
-                    </li>
                   </ol>
                 </Grid>
                 <Grid item xs={12} md={4}>
@@ -136,10 +145,10 @@ export default class About extends React.Component {
                   <ul>
                     <li>Figma</li>
                     <li>Adobe Creative Cloud</li>
-                    <li>Sketch + InVision</li>
                     <li>HTML + CSS</li>
                     <li>Sass/SCSS</li>
                     <li>React</li>
+                    <li>Sketch + InVision</li>
                     <li>jQuery + Javascript</li>
                     <li>SQL</li>
                     <li>C++</li>

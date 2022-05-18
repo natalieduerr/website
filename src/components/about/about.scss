@@ -11,6 +11,11 @@
     @include hidden();
   }
 
+  .h5 {
+    font-weight: 400;
+    color: $blue;
+  }
+
   ol,
   ul,
   li {
@@ -23,13 +28,13 @@
     font-weight: bold;
   }
 
+  span {
+    display: block;
+  }
+
   .exp {
     li {
       padding-bottom: 1.5rem;
-
-      span {
-        display: block;
-      }
 
       .role:not(:first-of-type) {
         padding-top: 1rem;
@@ -49,21 +54,19 @@
     }
   }
 
-  & .exp {
-    & a {
+  & .details {
+    a {
       display: flex;
       align-items: center;
       width: fit-content;
 
-      & .h5 {
-        @include underline($pink);
-      }
-
       & .MuiSvgIcon-root {
-        color: $pink;
-        fill: $pink;
         padding-left: 0.5rem;
       }
+    }
+
+    p {
+      padding-top: 1rem;
     }
   }
 

@@ -19,13 +19,30 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <header>
-        {this.props.activeTab === 'home' ? null : (
+        {this.props.activeTab === 'home' ? (
+          <Box display={{ xs: 'none', md: 'block' }}>
+            <Grid container>
+              <Grid container xs item justify='flex-end' spacing={3}>
+                <Grid item>
+                  <Link to='/about' className={this.props.activeTab === 'about' ? 'active' : null}>
+                    About
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <a href={Resume} rel='noopener noreferrer' target='_blank'>
+                    Résumé
+                  </a>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Box>
+        ) : (
           <Box display={{ xs: 'none', md: 'block' }}>
             <Grid container>
               <Grid container item xs md='auto' justify='flex-start' className='name-home'>
                 <Grid item>
                   <Link to='/' className='name'>
-                    <span>natalie duerr.</span>
+                    <span>Natalie Duerr</span>
                   </Link>
                 </Grid>
               </Grid>
@@ -73,7 +90,12 @@ export default class Navigation extends React.Component {
                 )}
               </Grid>
             </Grid>
-            <Grid container alignItems='center' direction='column' className={this.state.menuOpened ? 'menu open' : 'menu'}>
+            <Grid
+              container
+              alignItems='center'
+              direction='column'
+              className={this.state.menuOpened ? 'menu open' : 'menu'}
+            >
               <Grid item>
                 <Link to='/' className={this.props.activeTab === 'home' ? 'active' : ''}>
                   Home

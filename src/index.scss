@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Manrope:400,700|Space+Mono:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Mono:ital@0;1&display=swap');
 
 @import 'assets/styles/breakpoints';
 @import 'assets/styles/colors';
@@ -6,10 +6,10 @@
 
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $black;
+  background-color: $beige;
   font-size: $body-type;
 }
 
@@ -18,8 +18,8 @@ code {
 }
 
 .MuiSvgIcon-root {
-  color: $green;
-  fill: $green;
+  color: $blue;
+  fill: $blue;
 }
 
 header {

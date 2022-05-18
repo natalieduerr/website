@@ -21,24 +21,21 @@ header {
 
   a {
     font-family: 'Space Mono', monospace;
-    text-decoration: none;
 
     &.name span {
-      color: $blue;
+      color: $black;
     }
 
     &:not(.name) {
-      color: $green;
+      color: $blue;
       font-style: italic;
-      @include underline($green);
-    }
-
-    &.name {
-      @include underline($blue);
+      padding: 0 .5rem;
     }
 
     &.active {
-      border-bottom: solid 2px $green;
+      color: $white;
+      background-color: $blue;
+      text-decoration: none;
     }
   }
 }
