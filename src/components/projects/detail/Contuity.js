@@ -47,6 +47,7 @@ export default class Projects extends React.Component {
                       href={'https://www.figma.com/file/3PGwQGgW7UHH9WQZ0hTkUb/Hand-off-File-Copy?node-id=1%3A2'}
                       rel='noopener noreferrer'
                       target='_blank'
+                      className='button'
                     >
                       <Button className='primary' variant='contained' color='primary'>
                         View Figma Project

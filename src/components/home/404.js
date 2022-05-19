@@ -21,7 +21,7 @@ export default class Home extends React.Component {
             <Grid container justify={'center'} alignContent={'center'}>
               <Grid container justify={'center'} item xs={12} md={9} lg={8}>
                 <h1>Hmm... this is not the page you are looking for</h1>
-                <Link to={'/'}>
+                <Link className='button' to={'/'}>
                   <Button className='primary' variant='contained' color='primary'>
                     Take Yourself Home
                   </Button>

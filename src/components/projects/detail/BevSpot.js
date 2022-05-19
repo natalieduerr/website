@@ -51,6 +51,7 @@ export default class BevSpot extends React.Component {
                       href={'https://www.sketch.com/s/781a1889-a88a-4f96-969f-8de40a5df2ef'}
                       rel='noopener noreferrer'
                       target='_blank'
+                      className='button'
                     >
                       <Button className='primary' variant='contained' color='primary'>
                         View Sketch Cloud
@@ -111,20 +112,17 @@ export default class BevSpot extends React.Component {
                   {
                     id: 1,
                     img: require('../../../assets/imgs/projects/bevspot/2-1.png'),
-                    alt:
-                      'A wireframe showing the first iteration of the main ordering screen. Users are presented with the items and their preferred vendor initially and need to expand the row to see other vendors. They see their inventory, par levels, a suggested order, and order quantity for each item.',
+                    alt: 'A wireframe showing the first iteration of the main ordering screen. Users are presented with the items and their preferred vendor initially and need to expand the row to see other vendors. They see their inventory, par levels, a suggested order, and order quantity for each item.',
                   },
                   {
                     id: 2,
                     img: require('../../../assets/imgs/projects/bevspot/2-2.png'),
-                    alt:
-                      'A wireframe showing off the item card area. This feature would allow a user to have a main item with a a name, categories, and unit of measure, and then all the vendors who sell this item. The other tabs for an item include information on inventory, recipe usage, history, notes, and mapping in this iteration',
+                    alt: 'A wireframe showing off the item card area. This feature would allow a user to have a main item with a a name, categories, and unit of measure, and then all the vendors who sell this item. The other tabs for an item include information on inventory, recipe usage, history, notes, and mapping in this iteration',
                   },
                   {
                     id: 3,
                     img: require('../../../assets/imgs/projects/bevspot/2-3.png'),
-                    alt:
-                      'This wireframe is of the final cart screen. Here the user reviews the order and fixes an issues. This wireframe shows two issues that the user must fix before placing the order.',
+                    alt: 'This wireframe is of the final cart screen. Here the user reviews the order and fixes an issues. This wireframe shows two issues that the user must fix before placing the order.',
                   },
                 ]}
                 caption={
@@ -149,8 +147,7 @@ export default class BevSpot extends React.Component {
                   {
                     id: 4,
                     img: require('../../../assets/imgs/projects/bevspot/3-1.png'),
-                    alt:
-                      'This screen is the main ordering screen. It has several key actions at the top and then a listing of all the items below. A user can change the information for the columns. One item is opened to show the other vendors this item can be purchased from',
+                    alt: 'This screen is the main ordering screen. It has several key actions at the top and then a listing of all the items below. A user can change the information for the columns. One item is opened to show the other vendors this item can be purchased from',
                   },
                   {
                     id: 5,
@@ -160,8 +157,7 @@ export default class BevSpot extends React.Component {
                   {
                     id: 6,
                     img: require('../../../assets/imgs/projects/bevspot/3-3.png'),
-                    alt:
-                      "This is an example of two other buttons developed in the app. The user has the options to 'Delete All', which is their primary action and therefore a heavier looking button, or 'Cancel' which is just a text button.",
+                    alt: "This is an example of two other buttons developed in the app. The user has the options to 'Delete All', which is their primary action and therefore a heavier looking button, or 'Cancel' which is just a text button.",
                   },
                 ]}
                 caption={

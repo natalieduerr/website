@@ -45,7 +45,7 @@ export default class Projects extends React.Component {
                       Mass Hike needed a brand that matched its unique mission, a marketing website that captured the
                       fun of nature, and a ticket-purchasing system that was simple and easy to use.
                     </p>
-                    <a href={'https://masshike.org/'} rel='noopener noreferrer' target='_blank'>
+                    <a className='button' href={'https://masshike.org/'} rel='noopener noreferrer' target='_blank'>
                       <Button className='primary' variant='contained' color='primary'>
                         View Live Site
                       </Button>

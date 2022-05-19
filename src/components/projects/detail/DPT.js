@@ -41,7 +41,7 @@ export default class DPT extends React.Component {
                       bring in a lot of traffic from new and current users so it needed to be informative and encourage
                       new visitors to sign up for a free trial with BevSpot.
                     </p>
-                    <a href={'https://app.bevspot.com/drink_price_tool/'} rel='noopener noreferrer' target='_blank'>
+                    <a className='button' href={'https://app.bevspot.com/drink_price_tool/'} rel='noopener noreferrer' target='_blank'>
                       <Button className='primary' variant='contained' color='primary'>
                         View the Live Page
                       </Button>

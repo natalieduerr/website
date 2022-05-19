@@ -8,8 +8,6 @@ $small-body-type: 1rem;
 
 h2,
 .h2,
-h3,
-.h3,
 p,
 h6,
 .h6 {
@@ -23,6 +21,7 @@ h1,
   font-family: 'Space Mono', monospace;
   font-size: $middle-type;
   color: $black;
+  font-weight: 400;
 
   @media (min-width: $min-md) {
     font-size: $biggest-type;
@@ -45,6 +44,7 @@ h2,
 
 h3,
 .h3 {
+  font-family: 'Space Mono', monospace;
   font-size: $small-type;
   color: $black;
   margin-bottom: 1rem;
@@ -73,7 +73,6 @@ h5,
   font-family: 'Space Mono', monospace;
   color: $black;
   margin: 0;
-  font-weight: 700;
   font-size: $body-type;
   border-bottom: none;
 
@@ -86,7 +85,6 @@ h6,
 .h6 {
   color: $black;
   margin: 0;
-  font-weight: 400;
   font-size: $body-type;
   border-bottom: none;
   text-decoration: none;
@@ -125,7 +123,8 @@ a {
   font-family: 'Space Mono', monospace;
   text-decoration: underline;
 
-  &:not(.name) {
+  &:not(.name),
+  .h3 {
     color: $blue;
     font-style: italic;
   }

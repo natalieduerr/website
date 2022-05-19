@@ -82,8 +82,8 @@ export default class About extends React.Component {
                     (and sometimes rewatching) films at the theatre, knitting with my cat, or sipping on an iced matcha
                     latte at a nearby cafe.
                   </p>
-                  <a className="button" href={Resume} rel='noopener noreferrer' target='_blank'>
-                    <Button className='primary' variant='contained' color='primary'>
+                  <a className='button' href={Resume} rel='noopener noreferrer' target='_blank'>
+                      <Button className='primary' variant='contained' color='primary'>
                       View my Résumé
                     </Button>
                   </a>

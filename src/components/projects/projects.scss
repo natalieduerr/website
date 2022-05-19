@@ -1,6 +1,7 @@
 @import '../../assets/styles/colors';
 @import '../../assets/styles/breakpoints';
 @import '../../assets/styles/mixins';
+@import '../../assets/styles/type';
 
 main.all-projects {
   display: contents;
@@ -14,22 +15,17 @@ main.all-projects {
   & h1 {
     @include hidden();
   }
-  & .h3 {
-    @media (min-width: $min-md) {
-      border-bottom: 2px solid $green;
-      text-decoration: none;
-    }
-  }
 
   & a {
-    & .h3,
+    text-decoration: none;
+
+    & .h3 {
+      text-decoration: underline;
+    }
+
     & .h6 {
       font-style: normal;
     }
-  }
-
-  & .h6 {
-    color: $pink;
   }
 
   & .project-card {

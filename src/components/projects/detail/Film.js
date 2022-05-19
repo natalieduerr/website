@@ -45,7 +45,7 @@ export default class Film extends React.Component {
                       date watched, my rating, and my review. I was able to leverage this information to understand the
                       diversity of the filmmakers I watch.
                     </p>
-                    <a href={Poster} rel='noopener noreferrer' target='_blank'>
+                    <a className='button' href={Poster} rel='noopener noreferrer' target='_blank'>
                       <Button className='primary' variant='contained' color='primary'>
                         View Full PDF
                       </Button>

@@ -49,12 +49,7 @@ export default class Navigation extends React.Component {
               <Grid container xs item justify='flex-end' spacing={3}>
                 <Grid item>
                   <Link to='/projects' className={this.props.activeTab === 'projects' ? 'active' : null}>
-                    Projects
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link to='/photo' className={this.props.activeTab === 'photo' ? 'active' : null}>
-                    Photo
+                    Design
                   </Link>
                 </Grid>
                 <Grid item>
