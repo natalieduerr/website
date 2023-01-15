@@ -5,27 +5,20 @@ footer {
   background-color: $blue;
   display: flex;
   align-items: center;
-  margin-top: 3rem;
-
-  p {
-    margin-top: 1rem;
-  }
   
-  p,
-  a {
-    @media (min-width: $min-md) {
-      margin-top: 0.5rem;
-    }
-  }
-
   a span {
     border-bottom: 1px solid transparent;
     transition: 0.2s;
   }
 
+  p {
+    margin: 0;
+    margin-block: 0;
+  }
+
   a:hover span,
   a:focus span {
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $white;
   }
 
   .with-icon {
@@ -33,17 +26,15 @@ footer {
 
     & svg {
       padding-right: 0.25rem;
-      fill: $black;
+      fill: $white;
     }
   }
 
   .social {
     justify-content: flex-start;
-    margin-bottom: 1rem;
 
     @media (min-width: $min-md) {
       justify-content: flex-end;
-      margin-bottom: 0;
     }
   }
 }

@@ -16,10 +16,10 @@ export default class Navigation extends React.Component {
     return (
       <footer>
         <Container>
-          <Grid container justify={'space-between'} alignContent={'center'}>
+          <Grid container alignContent={'center'} alignItems={'center'}>
             <Grid item xs={12} md container spacing={3}>
-              <Grid item>
-                <p>{'Created with <3 by Natalie Duerr, 2021'}</p>
+              <Grid item >
+                <p>{'Created with <3 by Natalie Duerr, 2023'}</p>
               </Grid>
             </Grid>
             <Grid item className={'social'} xs={12} md container spacing={3} direction={'row'}>
@@ -29,10 +29,10 @@ export default class Navigation extends React.Component {
                   <span> Find me on Twitter</span>
                 </a>
               </Grid>
-              <Grid item>
+              <Grid item >
                 <a className={'with-icon'} href='https://www.linkedin.com/in/natalieduerr/'>
                   <LinkedInIcon />
-                  <span> Connect on LinkedIn</span>
+                  <span>Connect on LinkedIn</span>
                 </a>
               </Grid>
             </Grid>

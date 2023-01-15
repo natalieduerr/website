@@ -343,7 +343,7 @@ export default class BuildWave extends React.Component {
     return (
       <Grid item className='wave-container'>
         <svg width='400px' height='60px' viewBox='5 0 80 60'>
-          <path id='wave' fill='none' stroke='#262626' strokeWidth='4' strokeLinecap='round'></path>
+          <path id='wave' fill='none' strokeWidth='4' strokeLinecap='round'></path>
         </svg>
       </Grid>
     );

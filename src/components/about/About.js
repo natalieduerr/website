@@ -61,9 +61,10 @@ export default class About extends React.Component {
                 <Grid item xs={12} sm={6} md={5}>
                   <p className='me'>
                     I first became interested in design while working on my high school's yearbook. With very few art
-                    classes offered, I started out as a self-taught designer. I graduated with a BFA in Design
-                    (concentration in Interaction Design) from Northeastern University. My goal is to create meaningful
-                    interactions and experiences accessible to all.
+                    classes offered, I started as a self-taught designer. I finally found my design community at
+                    Northeastern University, where I graduated with a BFA in Design (concentration in Interaction
+                    Design). My goal is to create meaningful interactions and experiences accessible to all, in whatever
+                    form that may take.
                   </p>
                   <p className='me'>
                     When I'm not designing, I write about film, television, and art for{' '}
@@ -78,13 +79,13 @@ export default class About extends React.Component {
                     >
                       Huntington News
                     </a>{' '}
-                    (previously). If I'm not at my computer, you can catch me rollerskating at my local rink, watching
-                    (and sometimes rewatching) films at the theatre, knitting with my cat, or sipping on an iced matcha
-                    latte at a nearby cafe.
+                    (previously). If I'm not at my computer, you can catch me rollerskating at my hometown rink,
+                    watching (and sometimes rewatching) films at my local theatre, knitting with my cat, or sipping on a
+                    matcha latte at a nearby cafe.
                   </p>
                   <a className='button' href={Resume} rel='noopener noreferrer' target='_blank'>
-                      <Button className='primary' variant='contained' color='primary'>
-                      View my Résumé
+                    <Button className='primary' variant='contained' color='primary'>
+                      View my résumé
                     </Button>
                   </a>
                 </Grid>
@@ -98,7 +99,7 @@ export default class About extends React.Component {
                   <h3 className='h5'>Northeastern University</h3>
                   <span className='role'>BFA in Design</span>
                   <span>Minors in Computer Science and Art History</span>
-                  <span>Completed May 2021</span> 
+                  <span>Completed May 2021</span>
                   <p>
                     <strong>Relevant Courses:</strong> Interaction Design I & II, Programming Basics, Typography I & II,
                     Graphic Design I & II, Information Design, Physical Computing, Fundamentals of Computer Science I &

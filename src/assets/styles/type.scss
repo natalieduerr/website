@@ -1,3 +1,5 @@
+@import '../../assets/styles/breakpoints';
+
 $biggest-type: 3.5rem;
 $bigger-type: 3rem;
 $middle-type: 2.5rem;
@@ -133,6 +135,24 @@ a {
   &.button {
     text-decoration: none;
   }
+
+  &.tooltip {
+    position: relative;
+
+    span {
+      display: none;
+      transition: opacity .5s ease-in;
+      position: absolute;
+      top: 2rem;
+      left: 1rem;
+      padding: .5rem;
+      color: $white;
+      background-color: $blue;
+      font-size: $small-body-type;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+    }
+  }
 }
 
 p.caption {
@@ -151,7 +171,6 @@ button.MuiButton-containedPrimary {
   transition: 0.2s;
   box-shadow: none;
 
-
   & span.MuiButton-label {
     color: $black;
   }
@@ -165,10 +184,13 @@ button.MuiButton-containedPrimary {
 
 footer {
   & span,
-  & p,
-  & a:not(.name) {
-    font-family: 'Space Mono', monospace;
-    color: $black;
+  & p {
+    font-family: 'Inter', sans-serif;
+    color: $white;
     font-size: $small-body-type;
+  }
+
+  & a span {
+    font-family: 'Space Mono', monospace;
   }
 }

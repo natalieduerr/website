@@ -5,6 +5,19 @@
 
 .home {
   z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+
+  .MuiTooltip-tooltip	{
+    background-color: $blue !important;
+    color: $white !important;
+  }
+
+  @media (max-width: $max-sm) {
+    height: unset;
+  }
 
   @media (min-width: $min-md) {
     padding-top: 2.5rem;
@@ -26,16 +39,4 @@
       font-size: 2.5rem;
     }
   }  
-}
-
-.home {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  // transition: 500ms;
-
-  @media (max-width: $max-sm) {
-    height: unset;
-  }
 }
