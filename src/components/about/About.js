@@ -29,12 +29,12 @@ export default class About extends React.Component {
                 <Grid className='extra-photos' container spacing={2} direction={'column'} item md={4}>
                   <Grid item className='image'>
                     <img
-                      src={require('../../assets/imgs/about/cow.jpg')}
+                      src={require('../../assets/imgs/about/cow2.jpg')}
                       alt='Natalie poses next to a cow with brown spots at a local farm.'
                     />
                     <div className='caption'>
                       <p>Wycoff, NJ</p>
-                      <p>October 2021</p>
+                      <p>October 2022</p>
                     </div>
                   </Grid>
                   <Grid item className='image'>
@@ -50,12 +50,12 @@ export default class About extends React.Component {
                 </Grid>
                 <Grid className='image' item xs={12} sm={6} md={3}>
                   <img
-                    src={require('../../assets/imgs/about/sanfran.jpg')}
-                    alt='Natalie poses in a mask in the One-Way Color Tunnel at SFMOMA. She wears a pink and orange plaid dress and is surrounded by colorful tiles that reflect onto her.'
+                    src={require('../../assets/imgs/about/hat.jpg')}
+                    alt='Natalie poses with a bottle of lemonade while sitting on a blanket in a park. She is weating a blue floppy hat and pink dress.'
                   />
                   <div className='caption'>
-                    <p>San Francisoc, CA</p>
-                    <p>March 2022</p>
+                    <p>Brooklyn, NY</p>
+                    <p>May 2023</p>
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} md={5}>
@@ -79,7 +79,7 @@ export default class About extends React.Component {
                     >
                       Huntington News
                     </a>{' '}
-                    (previously). If I'm not at my computer, you can catch me rollerskating at my hometown rink,
+                    (previously). If I'm not at my computer, you can catch me rollerskating at a nearby rink,
                     watching (and sometimes rewatching) films at my local theatre, knitting with my cat, or sipping on a
                     matcha latte at a nearby cafe.
                   </p>

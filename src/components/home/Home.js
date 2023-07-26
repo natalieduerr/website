@@ -27,7 +27,7 @@ export default class Home extends React.Component {
             <Grid item xs={12}>
               <h3 className='h2'>
                 I’m a{' '}<Link to='/projects'>designer</Link>{' '}
-                and <Link to='/writing'>writer</Link> located in New York, NY. I strive to create delightful and accessible experiences across platforms.
+                and <Link to='/writing'>writer</Link> located in Brooklyn, NY. I strive to create delightful and accessible experiences across platforms.
               </h3>
             </Grid>
           </Container>

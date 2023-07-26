@@ -18,12 +18,12 @@ export default class Home extends React.Component {
         <Header></Header>
         <main role='main'>
           <Container style={{paddingTop: '4rem'}}>
-            <Grid container justify={'center'} alignContent={'center'}>
-              <Grid container justify={'center'} item xs={12} md={9} lg={8}>
+            <Grid container justifyContent={'center'} alignContent={'center'}>
+              <Grid container justifyContent={'center'} item xs={12} md={9} lg={8}>
                 <h1>Hmm... this is not the page you are looking for</h1>
                 <Link className='button' to={'/'}>
                   <Button className='primary' variant='contained' color='primary'>
-                    Take Yourself Home
+                    Take yourself home
                   </Button>
                 </Link>
               </Grid>
