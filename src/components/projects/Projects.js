@@ -18,11 +18,29 @@ export default class Projects extends React.Component {
       <div className={'page'}>
         <Grid container direction={'column'}>
           <Header activeTab={'projects'} />
-          <main className="all-projects" role='main'>
+          <main className='all-projects' role='main'>
             <Container className='projects'>
               <h1>Projects</h1>
               <Grid container>
                 <Grid item xs={12}>
+                  <ProjectCard
+                    name={'Conversational AI'}
+                    type={'Product Design'}
+                    link={'contuity'}
+                    img={'contuity.png'}
+                  />
+                  <ProjectCard
+                    name={'New Widget Experience'}
+                    type={'Product Design'}
+                    link={'contuity'}
+                    img={'contuity.png'}
+                  />
+                  <ProjectCard
+                    name={'Filmify'}
+                    type={'Research, UX/UI Design, and development'}
+                    link={'contuity'}
+                    img={'contuity.png'}
+                  />
                   <ProjectCard
                     name={'Mass Hike'}
                     type={'Research, UX Design, and Visual Design'}
@@ -30,34 +48,10 @@ export default class Projects extends React.Component {
                     img={'masshike.svg'}
                   />
                   <ProjectCard
-                    name={'Contuity'}
-                    type={'Research, UX Design, and Development'}
-                    link={'contuity'}
-                    img={'contuity.png'}
-                  />
-                  <ProjectCard
                     name={'Ordering on BevSpot'}
                     type={'Research, UX Design, and Visual Design'}
                     link={'bevspot'}
                     img={'bevspot.svg'}
-                  />
-                  <ProjectCard
-                    name={'A Year in Film'}
-                    type={'Typography, Info Design'}
-                    link={'film'}
-                    img={'film.svg'}
-                  />
-                  <ProjectCard
-                    name={'Drink Price Tool Landing Page'}
-                    type={'Web Design and Development'}
-                    link={'dpt'}
-                    img={'dpt-pina.svg'}
-                  />
-                  <ProjectCard
-                    name={'Online Resources'}
-                    type={'UX Design and Visual Design'}
-                    link={'online-resources'}
-                    img={'resources.svg'}
                   />
                 </Grid>
               </Grid>

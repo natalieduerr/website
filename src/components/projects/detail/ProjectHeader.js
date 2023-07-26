@@ -32,7 +32,7 @@ export default class ProjectHeader extends React.Component {
             </Grid>
             {this.props.with !== null ? (
               <Grid item xs={12} sm={6} md={3}>
-                <h2 className='h5'>In collaboration with</h2>
+                <h2 className='h5'>In collaboration</h2>
                 <p>{this.props.with}</p>
               </Grid>
             ) : null}

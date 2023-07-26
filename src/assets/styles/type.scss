@@ -51,6 +51,7 @@ h3,
   color: $black;
   margin-bottom: 1rem;
   width: fit-content;
+  font-weight: 400;
 
   @media (min-width: $min-md) {
     font-size: $bigger-type;
@@ -62,8 +63,9 @@ h4,
   color: $black;
   margin: 0;
   font-family: 'Space Mono', monospace;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   font-size: $small-type;
+  font-weight: 400;
 
   @media (min-width: $min-md) {
     font-size: $small-middle-type;

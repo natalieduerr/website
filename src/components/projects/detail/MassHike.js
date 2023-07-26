@@ -47,7 +47,7 @@ export default class Projects extends React.Component {
                     </p>
                     <a className='button' href={'https://masshike.org/'} rel='noopener noreferrer' target='_blank'>
                       <Button className='primary' variant='contained' color='primary'>
-                        View Live Site
+                        View live site
                       </Button>
                     </a>
                   </Grid>
@@ -149,9 +149,9 @@ export default class Projects extends React.Component {
                 linkText={'View all of the booking platform wireframes on InVision.'}
               ></ImageBlock>
               <Container>
-                <Grid container justify={'center'}>
+                <Grid container justifyContent={'center'}>
                   <Grid item xs={12} sm={10} md={8}>
-                    <h3 className='h4'>High Fidelity Screens</h3>
+                    <h3 className='h4'>High fidelity screens</h3>
                     <p>
                       After focusing on the booking platform, it was time to create a marketing site that would convince
                       people to join Mass Hike on a trip. Below are examples of the first screens I designed, and then

@@ -18,35 +18,37 @@ export default class Writing extends React.Component {
       <div className={'page'}>
         <Grid container direction={'column'}>
           <Header activeTab={'writing'} />
-          <main className="all-projects" role='main'>
+          <main className='all-projects' role='main'>
             <Container className='writing'>
               <h1>Writing samples</h1>
               <Grid container>
                 <Grid item xs={12}>
                   <ProjectCard
-                    name={'The art of acting and who benefits from “cripping up”?'}
+                    name={'An Ode to Background Characters'}
                     type={'Essay'}
-                    link={'https://natalieduerr.medium.com/the-art-of-acting-and-who-benefits-from-cripping-up-ff0079a71d97'}
+                    link={'https://readcopy.co/An-Ode-to-Background-Characters'}
                   />
                   <ProjectCard
-                    name={'Celebrate Women’s History Month with films directed by and starring women'}
-                    type={'Recommendations'}
-                    link={'https://huntnewsnu.com/65899/lifestyle/celebrate-womens-history-month-with-films-directed-by-and-starring-women/'}
-                  />
-                  <ProjectCard
-                    name={'Making sense of the senseless: Coel’s ‘I May Destroy You’ is this year’s biggest Golden Globe snub'}
+                    name={'Of Hollywood and Men'}
                     type={'Review'}
-                    link={'https://huntnewsnu.com/65281/lifestyle/review-making-sense-of-the-senseless-coels-i-may-destroy-you-is-this-years-biggest-golden-globe-snub/'}
-                  />
-                  <ProjectCard
-                    name={'The Visitors — COVID-19 transforms an art exhibit into a healing experience'}
-                    type={'Review'}
-                    link={'https://natalieduerr.medium.com/the-visitors-covid-19-transforms-an-art-exhibit-into-a-healing-experience-895fbf065a7d'}
+                    link={'https://readcopy.co/Of-Hollywood-and-Men'}
                   />
                   <ProjectCard
                     name={'Filmify’s Brand Design'}
                     type={'Process'}
                     link={'https://medium.com/filmify/brand-design-filmify-cb294614a3bc'}
+                  />
+                  <ProjectCard
+                    name={'The art of acting and who benefits from “cripping up”?'}
+                    type={'Essay'}
+                    link={
+                      'https://natalieduerr.medium.com/the-art-of-acting-and-who-benefits-from-cripping-up-ff0079a71d97'
+                    }
+                  />
+                  <ProjectCard
+                    name={'Death in Our Hands'}
+                    type={'Essay'}
+                    link={'https://readcopy.co/Death-in-Our-Hands'}
                   />
                 </Grid>
               </Grid>
